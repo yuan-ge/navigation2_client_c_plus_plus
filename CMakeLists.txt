@@ -23,7 +23,7 @@ find_package(rclcpp_action REQUIRED)
 find_package(rclcpp_components REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
-add_executable(action_client src/nav_to_pose.cpp)
+add_executable(action_client src/main.cpp)
 # add_library(action_client SHARED src/nav_to_pose.cpp)
 # target_include_directories(action_client PRIVATE
 #   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>

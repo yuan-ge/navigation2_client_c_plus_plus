@@ -7,7 +7,8 @@
         "*.repos": "yaml",
         "*.world": "xml",
         "*.xacro": "xml",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "sstream": "cpp"
     },
     // Autocomplete from ros python packages
     "python.autoComplete.extraPaths": [
