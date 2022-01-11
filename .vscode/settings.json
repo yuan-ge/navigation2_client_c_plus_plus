@@ -8,7 +8,8 @@
         "*.world": "xml",
         "*.xacro": "xml",
         "chrono": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "ratio": "cpp"
     },
     // Autocomplete from ros python packages
     "python.autoComplete.extraPaths": [

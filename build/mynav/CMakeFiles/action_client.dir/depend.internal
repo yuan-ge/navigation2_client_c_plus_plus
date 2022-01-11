@@ -360,6 +360,12 @@ CMakeFiles/action_client.dir/src/main.cpp.o
  /opt/ros/foxy/include/std_msgs/msg/detail/empty__traits.hpp
  /opt/ros/foxy/include/std_msgs/msg/detail/header__struct.hpp
  /opt/ros/foxy/include/std_msgs/msg/detail/header__traits.hpp
+ /opt/ros/foxy/include/tf2/LinearMath/MinMax.h
+ /opt/ros/foxy/include/tf2/LinearMath/QuadWord.h
+ /opt/ros/foxy/include/tf2/LinearMath/Quaternion.h
+ /opt/ros/foxy/include/tf2/LinearMath/Scalar.h
+ /opt/ros/foxy/include/tf2/LinearMath/Vector3.h
+ /opt/ros/foxy/include/tf2/visibility_control.h
  /opt/ros/foxy/include/tracetools/config.h
  /opt/ros/foxy/include/tracetools/tracetools.h
  /opt/ros/foxy/include/tracetools/utils.hpp
