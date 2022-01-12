@@ -1,0 +1,127 @@
+[0.000000] (-) TimerEvent: {}
+[0.000152] (mynav) JobQueued: {'identifier': 'mynav', 'dependencies': OrderedDict()}
+[0.000210] (mynav) JobStarted: {'identifier': 'mynav'}
+[0.098938] (-) TimerEvent: {}
+[0.122248] (mynav) JobProgress: {'identifier': 'mynav', 'progress': 'cmake'}
+[0.194259] (mynav) JobProgress: {'identifier': 'mynav', 'progress': 'build'}
+[0.198425] (mynav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hh/ros_ws/src/mynav/build/mynav', '--', '-j8', '-l8'], 'cwd': '/home/hh/ros_ws/src/mynav/build/mynav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'hh'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '3045'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hh'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.63.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2473'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4806'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hh'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:41822'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/zw:@/tmp/.ICE-unix/3095,unix/zw:/tmp/.ICE-unix/3095'), ('INVOCATION_ID', '5d3aa52151e74023bf86912c02b21da3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7c3ccf0b5f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hh/ros_ws/src/mynav/build/mynav'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('BREAKPAD_DUMP_LOCATION', '/home/hh/.config/Code/exthost Crash Reports'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.204435] (-) TimerEvent: {}
+[0.305152] (-) TimerEvent: {}
+[0.405731] (-) TimerEvent: {}
+[0.506150] (-) TimerEvent: {}
+[0.606560] (-) TimerEvent: {}
+[0.706942] (-) TimerEvent: {}
+[0.807350] (-) TimerEvent: {}
+[0.907823] (-) TimerEvent: {}
+[1.008250] (-) TimerEvent: {}
+[1.053662] (mynav) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target action_client\x1b[0m\n'}
+[1.108389] (-) TimerEvent: {}
+[1.208821] (-) TimerEvent: {}
+[1.220069] (mynav) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/action_client.dir/src/main.cpp.o\x1b[0m\n'}
+[1.308925] (-) TimerEvent: {}
+[1.409279] (-) TimerEvent: {}
+[1.509617] (-) TimerEvent: {}
+[1.609971] (-) TimerEvent: {}
+[1.710387] (-) TimerEvent: {}
+[1.810964] (-) TimerEvent: {}
+[1.911440] (-) TimerEvent: {}
+[2.012052] (-) TimerEvent: {}
+[2.112421] (-) TimerEvent: {}
+[2.212816] (-) TimerEvent: {}
+[2.313208] (-) TimerEvent: {}
+[2.413602] (-) TimerEvent: {}
+[2.513971] (-) TimerEvent: {}
+[2.614303] (-) TimerEvent: {}
+[2.714624] (-) TimerEvent: {}
+[2.815016] (-) TimerEvent: {}
+[2.915414] (-) TimerEvent: {}
+[3.015816] (-) TimerEvent: {}
+[3.116212] (-) TimerEvent: {}
+[3.216579] (-) TimerEvent: {}
+[3.316893] (-) TimerEvent: {}
+[3.417206] (-) TimerEvent: {}
+[3.517511] (-) TimerEvent: {}
+[3.617823] (-) TimerEvent: {}
+[3.718140] (-) TimerEvent: {}
+[3.818464] (-) TimerEvent: {}
+[3.918764] (-) TimerEvent: {}
+[4.019105] (-) TimerEvent: {}
+[4.119396] (-) TimerEvent: {}
+[4.219710] (-) TimerEvent: {}
+[4.320071] (-) TimerEvent: {}
+[4.420396] (-) TimerEvent: {}
+[4.520696] (-) TimerEvent: {}
+[4.621061] (-) TimerEvent: {}
+[4.721417] (-) TimerEvent: {}
+[4.821872] (-) TimerEvent: {}
+[4.922345] (-) TimerEvent: {}
+[5.022629] (-) TimerEvent: {}
+[5.122962] (-) TimerEvent: {}
+[5.223334] (-) TimerEvent: {}
+[5.323700] (-) TimerEvent: {}
+[5.362085] (mynav) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[5.362800] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[5.363019] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/string:41\x1b[m\x1b[K,\n'}
+[5.363209] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/stdexcept:39\x1b[m\x1b[K,\n'}
+[5.363426] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/array:39\x1b[m\x1b[K,\n'}
+[5.363691] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/tuple:39\x1b[m\x1b[K,\n'}
+[5.363927] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/functional:54\x1b[m\x1b[K,\n'}
+[5.364131] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hh/ros_ws/src/mynav/src/main.cpp:1\x1b[m\x1b[K:\n'}
+[5.364314] (mynav) StderrLine: {'line': b'/usr/include/c++/9/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = NavigationToPose; _Args = {NavigationToPose*}; _Tp = NavigationToPose]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.364497] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/alloc_traits.h:482:2:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = NavigationToPose; _Args = {NavigationToPose*}; _Tp = NavigationToPose; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<NavigationToPose>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.364669] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:548:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {NavigationToPose*}; _Tp = NavigationToPose; _Alloc = std::allocator<NavigationToPose>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.364834] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:679:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = NavigationToPose; _Alloc = std::allocator<NavigationToPose>; _Args = {NavigationToPose*}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.365009] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr_base.h:1344:71:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<NavigationToPose>; _Args = {NavigationToPose*}; _Tp = NavigationToPose; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.365167] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:359:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<NavigationToPose>; _Args = {NavigationToPose*}; _Tp = NavigationToPose]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.365319] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:701:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = NavigationToPose; _Alloc = std::allocator<NavigationToPose>; _Args = {NavigationToPose*}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.365468] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/shared_ptr.h:717:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = NavigationToPose; _Args = {NavigationToPose*}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.365617] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hh/ros_ws/src/mynav/src/main.cpp:109:83:\x1b[m\x1b[K   required from here\n'}
+[5.365770] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/ext/new_allocator.h:145:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KNavigationToPose::NavigationToPose(NavigationToPose*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.365932] (mynav) StderrLine: {'line': b'  145 |  noexcept(noexcept(\x1b[01;31m\x1b[K::new((void *)__p)\x1b[m\x1b[K\n'}
+[5.366197] (mynav) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.366367] (mynav) StderrLine: {'line': b'  146 | \x1b[01;31m\x1b[K       _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K))\n'}
+[5.366517] (mynav) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.366674] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hh/ros_ws/src/mynav/src/main.cpp:78:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KNavigationToPose::NavigationToPose(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.366855] (mynav) StderrLine: {'line': b'   78 |     \x1b[01;36m\x1b[KNavigationToPose\x1b[m\x1b[K(const rclcpp::NodeOptions & options = rclcpp::NodeOptions())\n'}
+[5.367001] (mynav) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.367137] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hh/ros_ws/src/mynav/src/main.cpp:78:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[KNavigationToPose*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::NodeOptions&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.367293] (mynav) StderrLine: {'line': b'   78 |     NavigationToPose(\x1b[01;36m\x1b[Kconst rclcpp::NodeOptions & options = rclcpp::NodeOptions()\x1b[m\x1b[K)\n'}
+[5.367429] (mynav) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.423766] (-) TimerEvent: {}
+[5.524046] (-) TimerEvent: {}
+[5.624368] (-) TimerEvent: {}
+[5.724716] (-) TimerEvent: {}
+[5.825027] (-) TimerEvent: {}
+[5.925342] (-) TimerEvent: {}
+[6.025690] (-) TimerEvent: {}
+[6.126093] (-) TimerEvent: {}
+[6.226503] (-) TimerEvent: {}
+[6.326847] (-) TimerEvent: {}
+[6.427170] (-) TimerEvent: {}
+[6.483632] (mynav) StderrLine: {'line': b'make[2]: *** [CMakeFiles/action_client.dir/build.make:63\xef\xbc\x9aCMakeFiles/action_client.dir/src/main.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[6.483999] (mynav) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78\xef\xbc\x9aCMakeFiles/action_client.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[6.484395] (mynav) StderrLine: {'line': b'make: *** [Makefile:141\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[6.527266] (-) TimerEvent: {}
+[6.627584] (-) TimerEvent: {}
+[6.727893] (-) TimerEvent: {}
+[6.749418] (mynav) CommandEnded: {'returncode': 2}
+[6.828078] (-) TimerEvent: {}
+[6.928536] (-) TimerEvent: {}
+[7.028957] (-) TimerEvent: {}
+[7.129446] (-) TimerEvent: {}
+[7.229887] (-) TimerEvent: {}
+[7.330246] (-) TimerEvent: {}
+[7.430592] (-) TimerEvent: {}
+[7.530960] (-) TimerEvent: {}
+[7.631388] (-) TimerEvent: {}
+[7.731792] (-) TimerEvent: {}
+[7.832333] (-) TimerEvent: {}
+[7.932645] (-) TimerEvent: {}
+[8.033025] (-) TimerEvent: {}
+[8.133386] (-) TimerEvent: {}
+[8.233701] (-) TimerEvent: {}
+[8.334055] (-) TimerEvent: {}
+[8.434460] (-) TimerEvent: {}
+[8.534765] (-) TimerEvent: {}
+[8.550164] (mynav) JobEnded: {'identifier': 'mynav', 'rc': 2}
+[8.562701] (-) EventReactorShutdown: {}

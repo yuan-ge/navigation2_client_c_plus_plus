@@ -25,6 +25,8 @@ private:
     rclcpp::Client<nav2_msgs::srv::GetCostmap>::SharedPtr get_costmap_global;
     rclcpp::Client<nav2_msgs::srv::GetCostmap>::SharedPtr get_costmap_local;
     using GoalHandleNav = rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>;
+    // rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped>::SharedPtr location_pose_sub_;
+    // bool init_complete;
 
     void goal_response_callback(std::shared_future<GoalHandleNav::SharedPtr> future)
     {
@@ -74,6 +76,11 @@ private:
         rclcpp::shutdown();
     }
 
+    // void amcl_pose_callback(const geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr msg){
+    //     RCLCPP_INFO(this->get_logger(), "收到amcl_pose消息");
+    //     this->init_complete = true;
+    // }
+
 public:
     NavigationToPose(const rclcpp::NodeOptions & options = rclcpp::NodeOptions())
     : Node("NavgationToPose", options)
@@ -83,6 +90,9 @@ public:
         this->timer_ = this->create_wall_timer(std::chrono::milliseconds(500), std::bind(&NavigationToPose::main_task, this));
         this->get_costmap_global = this->create_client<nav2_msgs::srv::GetCostmap>("/global_costmap/get_costmap");
         this->get_costmap_local = this->create_client<nav2_msgs::srv::GetCostmap>("/local_costmap/get_costmap");
+        // this->location_pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>(
+        //     "amcl_pose", 1, std::bind(&NavigationToPose::amcl_pose_callback, this, std::placeholders::_1));
+        // this->init_complete = false;
     }
    
     void main_task(){
@@ -93,6 +103,7 @@ public:
         this->timer_->cancel(); //停止定时器，使得这个主任务只运行一次
         init_pose();
         send_goal(4, 0, M_PI/2);
+        make_plan();
     }
 
     void make_plan(){
@@ -101,12 +112,13 @@ public:
          * 
          */
         while(!this->get_costmap_global->wait_for_service(std::chrono::seconds(1))){
-            RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "service not available, waiting again...");
+            RCLCPP_INFO(this->get_logger(), "service not available, waiting again...");
         }
         auto req = std::make_shared<nav2_msgs::srv::GetCostmap::Request>();
         auto future = this->get_costmap_global->async_send_request(req);
-        rclcpp::spin_until_future_complete(std::make_shared<NavigationToPose>(this), future);
+        rclcpp::spin_until_future_complete(std::make_shared<NavigationToPose>(), future);
         auto global_map = future.get()->map;
+        RCLCPP_INFO(this->get_logger(), "获取了全局地图。");
     }
 
     void init_pose(){
@@ -114,9 +126,17 @@ public:
          * @brief 初始化机器人的位置
          * 
          */
-        auto initial_pose = geometry_msgs::msg::PoseStamped();
+        auto initial_pose = geometry_msgs::msg::PoseWithCovarianceStamped();
         initial_pose.header.frame_id = "map";
-        initial_pose.pose.orientation.w = 1.0;
+        initial_pose.pose.pose.orientation.w = 1.0;
+        RCLCPP_INFO(this->get_logger(), "start init pose");
+        this->initial_pose_publisher_->publish(initial_pose);
+        // while(! this->init_complete){
+        //     RCLCPP_INFO(this->get_logger(), "等待位置初始化中...");
+        // }
+        // RCLCPP_INFO(this->get_logger(), "位置初始化完成");
+        std::this_thread::sleep_for(std::chrono::seconds(5));
+        RCLCPP_INFO(this->get_logger(), "init pose complete");
     }
 
     void send_goal(double x, double y, double yaw){

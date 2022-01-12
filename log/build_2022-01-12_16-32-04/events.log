@@ -1,0 +1,206 @@
+[0.000000] (-) TimerEvent: {}
+[0.000871] (mynav) JobQueued: {'identifier': 'mynav', 'dependencies': OrderedDict()}
+[0.001869] (mynav) JobStarted: {'identifier': 'mynav'}
+[0.026298] (mynav) JobProgress: {'identifier': 'mynav', 'progress': 'cmake'}
+[0.030798] (mynav) JobProgress: {'identifier': 'mynav', 'progress': 'build'}
+[0.030973] (mynav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hh/ros_ws/src/mynav/build/mynav', '--', '-j8', '-l8'], 'cwd': '/home/hh/ros_ws/src/mynav/build/mynav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'hh'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '3045'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hh'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.63.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2473'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4806'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hh'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:41822'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/zw:@/tmp/.ICE-unix/3095,unix/zw:/tmp/.ICE-unix/3095'), ('INVOCATION_ID', '5d3aa52151e74023bf86912c02b21da3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7c3ccf0b5f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hh/ros_ws/src/mynav/build/mynav'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('BREAKPAD_DUMP_LOCATION', '/home/hh/.config/Code/exthost Crash Reports'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099517] (-) TimerEvent: {}
+[0.163483] (mynav) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target action_client\x1b[0m\n'}
+[0.200437] (-) TimerEvent: {}
+[0.241183] (mynav) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/action_client.dir/src/main.cpp.o\x1b[0m\n'}
+[0.300619] (-) TimerEvent: {}
+[0.401202] (-) TimerEvent: {}
+[0.501752] (-) TimerEvent: {}
+[0.602227] (-) TimerEvent: {}
+[0.702666] (-) TimerEvent: {}
+[0.803152] (-) TimerEvent: {}
+[0.903719] (-) TimerEvent: {}
+[1.004127] (-) TimerEvent: {}
+[1.104491] (-) TimerEvent: {}
+[1.204835] (-) TimerEvent: {}
+[1.305212] (-) TimerEvent: {}
+[1.405792] (-) TimerEvent: {}
+[1.506239] (-) TimerEvent: {}
+[1.606733] (-) TimerEvent: {}
+[1.707227] (-) TimerEvent: {}
+[1.807894] (-) TimerEvent: {}
+[1.908390] (-) TimerEvent: {}
+[2.008902] (-) TimerEvent: {}
+[2.109296] (-) TimerEvent: {}
+[2.209660] (-) TimerEvent: {}
+[2.309970] (-) TimerEvent: {}
+[2.410349] (-) TimerEvent: {}
+[2.510781] (-) TimerEvent: {}
+[2.611237] (-) TimerEvent: {}
+[2.711539] (-) TimerEvent: {}
+[2.811898] (-) TimerEvent: {}
+[2.912331] (-) TimerEvent: {}
+[3.012677] (-) TimerEvent: {}
+[3.113054] (-) TimerEvent: {}
+[3.213519] (-) TimerEvent: {}
+[3.313860] (-) TimerEvent: {}
+[3.414216] (-) TimerEvent: {}
+[3.514556] (-) TimerEvent: {}
+[3.615145] (-) TimerEvent: {}
+[3.715493] (-) TimerEvent: {}
+[3.815804] (-) TimerEvent: {}
+[3.916167] (-) TimerEvent: {}
+[4.016547] (-) TimerEvent: {}
+[4.117028] (-) TimerEvent: {}
+[4.217431] (-) TimerEvent: {}
+[4.317886] (-) TimerEvent: {}
+[4.418422] (-) TimerEvent: {}
+[4.518790] (-) TimerEvent: {}
+[4.619262] (-) TimerEvent: {}
+[4.719976] (-) TimerEvent: {}
+[4.820473] (-) TimerEvent: {}
+[4.920900] (-) TimerEvent: {}
+[5.021464] (-) TimerEvent: {}
+[5.121906] (-) TimerEvent: {}
+[5.222325] (-) TimerEvent: {}
+[5.322684] (-) TimerEvent: {}
+[5.423250] (-) TimerEvent: {}
+[5.523643] (-) TimerEvent: {}
+[5.624031] (-) TimerEvent: {}
+[5.724459] (-) TimerEvent: {}
+[5.824863] (-) TimerEvent: {}
+[5.925245] (-) TimerEvent: {}
+[6.027601] (-) TimerEvent: {}
+[6.128223] (-) TimerEvent: {}
+[6.228639] (-) TimerEvent: {}
+[6.329026] (-) TimerEvent: {}
+[6.429373] (-) TimerEvent: {}
+[6.529826] (-) TimerEvent: {}
+[6.630223] (-) TimerEvent: {}
+[6.730544] (-) TimerEvent: {}
+[6.830940] (-) TimerEvent: {}
+[6.931290] (-) TimerEvent: {}
+[7.031612] (-) TimerEvent: {}
+[7.132007] (-) TimerEvent: {}
+[7.232344] (-) TimerEvent: {}
+[7.332655] (-) TimerEvent: {}
+[7.433055] (-) TimerEvent: {}
+[7.533669] (-) TimerEvent: {}
+[7.634142] (-) TimerEvent: {}
+[7.734564] (-) TimerEvent: {}
+[7.834927] (-) TimerEvent: {}
+[7.935409] (-) TimerEvent: {}
+[8.035723] (-) TimerEvent: {}
+[8.136067] (-) TimerEvent: {}
+[8.236439] (-) TimerEvent: {}
+[8.336973] (-) TimerEvent: {}
+[8.437328] (-) TimerEvent: {}
+[8.537684] (-) TimerEvent: {}
+[8.638130] (-) TimerEvent: {}
+[8.738485] (-) TimerEvent: {}
+[8.838789] (-) TimerEvent: {}
+[8.939148] (-) TimerEvent: {}
+[9.039491] (-) TimerEvent: {}
+[9.139885] (-) TimerEvent: {}
+[9.240196] (-) TimerEvent: {}
+[9.340570] (-) TimerEvent: {}
+[9.440980] (-) TimerEvent: {}
+[9.541307] (-) TimerEvent: {}
+[9.641638] (-) TimerEvent: {}
+[9.742181] (-) TimerEvent: {}
+[9.842501] (-) TimerEvent: {}
+[9.942824] (-) TimerEvent: {}
+[10.043169] (-) TimerEvent: {}
+[10.143702] (-) TimerEvent: {}
+[10.244056] (-) TimerEvent: {}
+[10.344520] (-) TimerEvent: {}
+[10.445029] (-) TimerEvent: {}
+[10.545547] (-) TimerEvent: {}
+[10.645906] (-) TimerEvent: {}
+[10.746393] (-) TimerEvent: {}
+[10.846950] (-) TimerEvent: {}
+[10.947408] (-) TimerEvent: {}
+[11.047735] (-) TimerEvent: {}
+[11.148103] (-) TimerEvent: {}
+[11.248441] (-) TimerEvent: {}
+[11.348913] (-) TimerEvent: {}
+[11.449216] (-) TimerEvent: {}
+[11.549669] (-) TimerEvent: {}
+[11.650022] (-) TimerEvent: {}
+[11.750426] (-) TimerEvent: {}
+[11.850789] (-) TimerEvent: {}
+[11.951095] (-) TimerEvent: {}
+[12.051453] (-) TimerEvent: {}
+[12.151769] (-) TimerEvent: {}
+[12.252160] (-) TimerEvent: {}
+[12.352521] (-) TimerEvent: {}
+[12.452839] (-) TimerEvent: {}
+[12.553156] (-) TimerEvent: {}
+[12.653472] (-) TimerEvent: {}
+[12.753824] (-) TimerEvent: {}
+[12.854220] (-) TimerEvent: {}
+[12.954527] (-) TimerEvent: {}
+[13.054852] (-) TimerEvent: {}
+[13.155301] (-) TimerEvent: {}
+[13.255612] (-) TimerEvent: {}
+[13.356004] (-) TimerEvent: {}
+[13.456447] (-) TimerEvent: {}
+[13.556761] (-) TimerEvent: {}
+[13.657118] (-) TimerEvent: {}
+[13.757600] (-) TimerEvent: {}
+[13.857976] (-) TimerEvent: {}
+[13.958308] (-) TimerEvent: {}
+[14.058689] (-) TimerEvent: {}
+[14.159044] (-) TimerEvent: {}
+[14.259380] (-) TimerEvent: {}
+[14.359681] (-) TimerEvent: {}
+[14.459989] (-) TimerEvent: {}
+[14.560340] (-) TimerEvent: {}
+[14.660736] (-) TimerEvent: {}
+[14.761118] (-) TimerEvent: {}
+[14.861561] (-) TimerEvent: {}
+[14.961956] (-) TimerEvent: {}
+[15.062329] (-) TimerEvent: {}
+[15.162744] (-) TimerEvent: {}
+[15.263251] (-) TimerEvent: {}
+[15.363683] (-) TimerEvent: {}
+[15.464065] (-) TimerEvent: {}
+[15.564497] (-) TimerEvent: {}
+[15.664863] (-) TimerEvent: {}
+[15.765216] (-) TimerEvent: {}
+[15.865543] (-) TimerEvent: {}
+[15.966074] (-) TimerEvent: {}
+[16.066426] (-) TimerEvent: {}
+[16.166726] (-) TimerEvent: {}
+[16.267061] (-) TimerEvent: {}
+[16.367674] (-) TimerEvent: {}
+[16.468195] (-) TimerEvent: {}
+[16.568586] (-) TimerEvent: {}
+[16.668949] (-) TimerEvent: {}
+[16.722857] (mynav) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable action_client\x1b[0m\n'}
+[16.769058] (-) TimerEvent: {}
+[16.869407] (-) TimerEvent: {}
+[16.969783] (-) TimerEvent: {}
+[17.070298] (-) TimerEvent: {}
+[17.077771] (mynav) StdoutLine: {'line': b'[100%] Built target action_client\n'}
+[17.095424] (mynav) CommandEnded: {'returncode': 0}
+[17.134903] (mynav) JobProgress: {'identifier': 'mynav', 'progress': 'install'}
+[17.153535] (mynav) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hh/ros_ws/src/mynav/build/mynav'], 'cwd': '/home/hh/ros_ws/src/mynav/build/mynav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'hh'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '3045'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hh'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.63.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2473'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4806'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hh'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:41822'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/zw:@/tmp/.ICE-unix/3095,unix/zw:/tmp/.ICE-unix/3095'), ('INVOCATION_ID', '5d3aa52151e74023bf86912c02b21da3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7c3ccf0b5f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hh/ros_ws/src/mynav/build/mynav'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('BREAKPAD_DUMP_LOCATION', '/home/hh/.config/Code/exthost Crash Reports'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[17.168698] (mynav) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[17.169104] (mynav) StdoutLine: {'line': b'-- Installing: /home/hh/ros_ws/src/mynav/install/lib/mynav/action_client\n'}
+[17.170375] (-) TimerEvent: {}
+[17.181632] (mynav) StdoutLine: {'line': b'-- Set runtime path of "/home/hh/ros_ws/src/mynav/install/lib/mynav/action_client" to ""\n'}
+[17.181975] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/ament_index/resource_index/package_run_dependencies/mynav\n'}
+[17.182292] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/ament_index/resource_index/parent_prefix_path/mynav\n'}
+[17.182671] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/environment/ament_prefix_path.sh\n'}
+[17.182844] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/environment/ament_prefix_path.dsv\n'}
+[17.183016] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/environment/path.sh\n'}
+[17.183352] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/environment/path.dsv\n'}
+[17.183558] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/local_setup.bash\n'}
+[17.183739] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/local_setup.sh\n'}
+[17.183910] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/local_setup.zsh\n'}
+[17.184076] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/local_setup.dsv\n'}
+[17.184223] (mynav) StdoutLine: {'line': b'-- Installing: /home/hh/ros_ws/src/mynav/install/share/mynav/package.dsv\n'}
+[17.184368] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/ament_index/resource_index/packages/mynav\n'}
+[17.184612] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/cmake/mynavConfig.cmake\n'}
+[17.184772] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/cmake/mynavConfig-version.cmake\n'}
+[17.184953] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/package.xml\n'}
+[17.186076] (mynav) CommandEnded: {'returncode': 0}
+[17.270519] (-) TimerEvent: {}
+[17.273612] (mynav) JobEnded: {'identifier': 'mynav', 'rc': 0}
+[17.275790] (-) EventReactorShutdown: {}

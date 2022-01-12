@@ -1,0 +1,30 @@
+[0.032s] Invoking command in '/home/hh/ros_ws/src/mynav/build/mynav': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/hh/ros_ws/src/mynav/build/mynav -- -j8 -l8
+[0.128s] [35m[1mScanning dependencies of target action_client[0m
+[0.190s] [ 50%] [32mBuilding CXX object CMakeFiles/action_client.dir/src/main.cpp.o[0m
+[4.310s] [01m[K/home/hh/ros_ws/src/mynav/src/main.cpp:[m[K In member function ‘[01m[Kvoid NavigationToPose::amcl_pose_callback(geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.310s] [01m[K/home/hh/ros_ws/src/mynav/src/main.cpp:79:92:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.310s]    79 |     void amcl_pose_callback([01;35m[Kconst geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr msg[m[K){
+[4.310s]       |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[29.803s] [100%] [32m[1mLinking CXX executable action_client[0m
+[30.604s] [100%] Built target action_client
+[30.621s] Invoked command in '/home/hh/ros_ws/src/mynav/build/mynav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/hh/ros_ws/src/mynav/build/mynav -- -j8 -l8
+[30.700s] Invoking command in '/home/hh/ros_ws/src/mynav/build/mynav': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/hh/ros_ws/src/mynav/build/mynav
+[30.714s] -- Install configuration: "RelWithDebInfo"
+[30.715s] -- Installing: /home/hh/ros_ws/src/mynav/install/lib/mynav/action_client
+[30.736s] -- Set runtime path of "/home/hh/ros_ws/src/mynav/install/lib/mynav/action_client" to ""
+[30.737s] -- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/ament_index/resource_index/package_run_dependencies/mynav
+[30.768s] -- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/ament_index/resource_index/parent_prefix_path/mynav
+[30.768s] -- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/environment/ament_prefix_path.sh
+[30.768s] -- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/environment/ament_prefix_path.dsv
+[30.768s] -- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/environment/path.sh
+[30.769s] -- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/environment/path.dsv
+[30.769s] -- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/local_setup.bash
+[30.769s] -- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/local_setup.sh
+[30.769s] -- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/local_setup.zsh
+[30.769s] -- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/local_setup.dsv
+[30.770s] -- Installing: /home/hh/ros_ws/src/mynav/install/share/mynav/package.dsv
+[30.770s] -- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/ament_index/resource_index/packages/mynav
+[30.770s] -- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/cmake/mynavConfig.cmake
+[30.770s] -- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/cmake/mynavConfig-version.cmake
+[30.770s] -- Up-to-date: /home/hh/ros_ws/src/mynav/install/share/mynav/package.xml
+[30.781s] Invoked command in '/home/hh/ros_ws/src/mynav/build/mynav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/hh/ros_ws/src/mynav/build/mynav

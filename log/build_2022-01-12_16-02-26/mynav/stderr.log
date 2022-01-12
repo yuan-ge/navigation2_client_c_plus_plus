@@ -1,0 +1,4 @@
+[01m[K/home/hh/ros_ws/src/mynav/src/main.cpp:[m[K In member function ‘[01m[Kvoid NavigationToPose::amcl_pose_callback(geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hh/ros_ws/src/mynav/src/main.cpp:79:92:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   79 |     void amcl_pose_callback([01;35m[Kconst geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr msg[m[K){
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K

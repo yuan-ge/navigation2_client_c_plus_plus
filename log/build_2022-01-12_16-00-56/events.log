@@ -1,0 +1,175 @@
+[0.000000] (-) TimerEvent: {}
+[0.000248] (mynav) JobQueued: {'identifier': 'mynav', 'dependencies': OrderedDict()}
+[0.000551] (mynav) JobStarted: {'identifier': 'mynav'}
+[0.019784] (mynav) JobProgress: {'identifier': 'mynav', 'progress': 'cmake'}
+[0.021369] (mynav) JobProgress: {'identifier': 'mynav', 'progress': 'build'}
+[0.022723] (mynav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hh/ros_ws/src/mynav/build/mynav', '--', '-j8', '-l8'], 'cwd': '/home/hh/ros_ws/src/mynav/build/mynav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'hh'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '3045'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/hh'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.63.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2473'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4806'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'hh'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:41822'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/zw:@/tmp/.ICE-unix/3095,unix/zw:/tmp/.ICE-unix/3095'), ('INVOCATION_ID', '5d3aa52151e74023bf86912c02b21da3'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7c3ccf0b5f.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hh/ros_ws/src/mynav/build/mynav'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('BREAKPAD_DUMP_LOCATION', '/home/hh/.config/Code/exthost Crash Reports'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.095021] (-) TimerEvent: {}
+[0.195573] (-) TimerEvent: {}
+[0.296088] (-) TimerEvent: {}
+[0.396700] (-) TimerEvent: {}
+[0.497190] (-) TimerEvent: {}
+[0.597761] (-) TimerEvent: {}
+[0.698428] (-) TimerEvent: {}
+[0.739232] (mynav) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target action_client\x1b[0m\n'}
+[0.798560] (-) TimerEvent: {}
+[0.817490] (mynav) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/action_client.dir/src/main.cpp.o\x1b[0m\n'}
+[0.898683] (-) TimerEvent: {}
+[0.999178] (-) TimerEvent: {}
+[1.099723] (-) TimerEvent: {}
+[1.200235] (-) TimerEvent: {}
+[1.300690] (-) TimerEvent: {}
+[1.401684] (-) TimerEvent: {}
+[1.502290] (-) TimerEvent: {}
+[1.602750] (-) TimerEvent: {}
+[1.703250] (-) TimerEvent: {}
+[1.803839] (-) TimerEvent: {}
+[1.904332] (-) TimerEvent: {}
+[2.005080] (-) TimerEvent: {}
+[2.105977] (-) TimerEvent: {}
+[2.206731] (-) TimerEvent: {}
+[2.307150] (-) TimerEvent: {}
+[2.407690] (-) TimerEvent: {}
+[2.508301] (-) TimerEvent: {}
+[2.608805] (-) TimerEvent: {}
+[2.709347] (-) TimerEvent: {}
+[2.810171] (-) TimerEvent: {}
+[2.910621] (-) TimerEvent: {}
+[3.011006] (-) TimerEvent: {}
+[3.111486] (-) TimerEvent: {}
+[3.212399] (-) TimerEvent: {}
+[3.313025] (-) TimerEvent: {}
+[3.413548] (-) TimerEvent: {}
+[3.514095] (-) TimerEvent: {}
+[3.614596] (-) TimerEvent: {}
+[3.715024] (-) TimerEvent: {}
+[3.815491] (-) TimerEvent: {}
+[3.916036] (-) TimerEvent: {}
+[4.016372] (-) TimerEvent: {}
+[4.116734] (-) TimerEvent: {}
+[4.217088] (-) TimerEvent: {}
+[4.317486] (-) TimerEvent: {}
+[4.417827] (-) TimerEvent: {}
+[4.518140] (-) TimerEvent: {}
+[4.618467] (-) TimerEvent: {}
+[4.718818] (-) TimerEvent: {}
+[4.819170] (-) TimerEvent: {}
+[4.919529] (-) TimerEvent: {}
+[5.020218] (-) TimerEvent: {}
+[5.120614] (-) TimerEvent: {}
+[5.124128] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hh/ros_ws/src/mynav/src/main.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid NavigationToPose::amcl_pose_callback(geometry_msgs::msg::PoseWithCovarianceStamped)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.125034] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hh/ros_ws/src/mynav/src/main.cpp:79:81:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[5.125552] (mynav) StderrLine: {'line': b'   79 |     void amcl_pose_callback(\x1b[01;35m\x1b[Kconst geometry_msgs::msg::PoseWithCovarianceStamped msg\x1b[m\x1b[K){\n'}
+[5.125880] (mynav) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[5.220809] (-) TimerEvent: {}
+[5.321563] (-) TimerEvent: {}
+[5.422085] (-) TimerEvent: {}
+[5.522456] (-) TimerEvent: {}
+[5.622815] (-) TimerEvent: {}
+[5.723278] (-) TimerEvent: {}
+[5.823741] (-) TimerEvent: {}
+[5.924216] (-) TimerEvent: {}
+[6.024871] (-) TimerEvent: {}
+[6.125549] (-) TimerEvent: {}
+[6.226067] (-) TimerEvent: {}
+[6.326626] (-) TimerEvent: {}
+[6.392543] (mynav) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_interfaces/node_topics_interface.hpp:32\x1b[m\x1b[K,\n'}
+[6.393556] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node.hpp:55\x1b[m\x1b[K,\n'}
+[6.394430] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[6.394694] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[6.394911] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.395107] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hh/ros_ws/src/mynav/src/main.cpp:12\x1b[m\x1b[K:\n'}
+[6.395268] (mynav) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/subscription_factory.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Krclcpp::SubscriptionFactory rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<CallbackMessageT> >) [with MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (NavigationToPose::*(NavigationToPose*, std::_Placeholder<1>))(geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.395433] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/create_subscription.hpp:144:63:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<SubscriptionT> rclcpp::create_subscription(NodeT&&, const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (NavigationToPose::*(NavigationToPose*, std::_Placeholder<1>))(geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> >; NodeT = rclcpp::Node&; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.395682] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/node_impl.hpp:98:47:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (NavigationToPose::*(NavigationToPose*, std::_Placeholder<1>))(geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> >; std::string = std::__cxx11::basic_string<char>; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.395929] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hh/ros_ws/src/mynav/src/main.cpp:94:106:\x1b[m\x1b[K   required from here\n'}
+[6.396148] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription_factory.hpp:97:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::AnySubscriptionCallback<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> >::set(std::_Bind<void (NavigationToPose::*(NavigationToPose*, std::_Placeholder<1>))(geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >)>)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.396285] (mynav) StderrLine: {'line': b'   97 |   \x1b[01;31m\x1b[Kany_subscription_callback\x1b[m\x1b[K.set(std::forward<CallbackT>(callback));\n'}
+[6.396400] (mynav) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.396500] (mynav) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/subscription_base.hpp:29\x1b[m\x1b[K,\n'}
+[6.396617] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:26\x1b[m\x1b[K,\n'}
+[6.396736] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.396836] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[6.396976] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.397147] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.397345] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[6.397526] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.397641] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.397750] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.397915] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hh/ros_ws/src/mynav/src/main.cpp:12\x1b[m\x1b[K:\n'}
+[6.398037] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:83:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>)> >::value>::type* <anonymous> = <enumerator>; MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.398187] (mynav) StderrLine: {'line': b'   83 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[6.398335] (mynav) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.398452] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:83:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.398568] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:81:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.398690] (mynav) StderrLine: {'line': b'   81 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[6.398794] (mynav) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.398897] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:97:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >, const rclcpp::MessageInfo&)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<_Tp>, const rclcpp::MessageInfo&)> >::value>::type* <anonymous> = <enumerator>; MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.399043] (mynav) StderrLine: {'line': b'   97 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[6.399145] (mynav) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.399247] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:97:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.399351] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:95:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.399565] (mynav) StderrLine: {'line': b'   95 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[6.399703] (mynav) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.399812] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:111:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const _Tp>)> >::value>::type* <anonymous> = <enumerator>; MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.399919] (mynav) StderrLine: {'line': b'  111 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[6.400015] (mynav) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.400110] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:111:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.400213] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:109:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.400332] (mynav) StderrLine: {'line': b'  109 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[6.400430] (mynav) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.400527] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:125:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >, const rclcpp::MessageInfo&)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_ptr<const _Tp>, const rclcpp::MessageInfo&)> >::value>::type* <anonymous> = <enumerator>; MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.400655] (mynav) StderrLine: {'line': b'  125 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[6.400800] (mynav) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.400934] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:125:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.401070] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:123:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.401192] (mynav) StderrLine: {'line': b'  123 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[6.401315] (mynav) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.401439] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:139:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > > >)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type>)> >::value>::type* <anonymous> = <enumerator>; MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.401599] (mynav) StderrLine: {'line': b'  139 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[6.401762] (mynav) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.401938] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:139:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.402113] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:137:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.402289] (mynav) StderrLine: {'line': b'  137 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[6.402452] (mynav) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.402615] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:153:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::default_delete<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > > >, const rclcpp::MessageInfo&)> >::value, void>::type* <anonymous> > void rclcpp::AnySubscriptionCallback<MessageT, Alloc>::set(CallbackT) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::unique_ptr<MessageT, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type>::rebind_alloc<MessageT>, typename std::allocator<void>::rebind<_Tp1>::other>::value, std::default_delete<_Tp>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<MessageT>::allocator_type> >::type>, const rclcpp::MessageInfo&)> >::value>::type* <anonymous> = <enumerator>; MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; Alloc = std::allocator<void>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.402826] (mynav) StderrLine: {'line': b'  153 |   void \x1b[01;36m\x1b[Kset\x1b[m\x1b[K(CallbackT callback)\n'}
+[6.403010] (mynav) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.403338] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:153:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.403555] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_subscription_callback.hpp:151:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.403882] (mynav) StderrLine: {'line': b'  151 |     >::type * = \x1b[01;31m\x1b[Knullptr\x1b[m\x1b[K\n'}
+[6.404085] (mynav) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.426764] (-) TimerEvent: {}
+[6.527369] (-) TimerEvent: {}
+[6.627897] (-) TimerEvent: {}
+[6.728392] (-) TimerEvent: {}
+[6.828811] (-) TimerEvent: {}
+[6.929209] (-) TimerEvent: {}
+[7.029801] (-) TimerEvent: {}
+[7.130519] (-) TimerEvent: {}
+[7.230944] (-) TimerEvent: {}
+[7.331497] (-) TimerEvent: {}
+[7.432083] (-) TimerEvent: {}
+[7.532851] (-) TimerEvent: {}
+[7.633362] (-) TimerEvent: {}
+[7.733796] (-) TimerEvent: {}
+[7.834308] (-) TimerEvent: {}
+[7.931303] (mynav) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/functional:59\x1b[m\x1b[K,\n'}
+[7.931640] (mynav) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hh/ros_ws/src/mynav/src/main.cpp:1\x1b[m\x1b[K:\n'}
+[7.931871] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:\x1b[m\x1b[K At global scope:\n'}
+[7.932067] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/std_function.h:667:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::function<_Res(_ArgTypes ...)>::function(_Functor) [with _Functor = rclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<CallbackMessageT> >) [with MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (NavigationToPose::*(NavigationToPose*, std::_Placeholder<1>))(geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> > >]::<lambda(rclcpp::node_interfaces::NodeBaseInterface*, const string&, const rclcpp::QoS&)>; <template-parameter-2-2> = void; <template-parameter-2-3> = void; _Res = std::shared_ptr<rclcpp::SubscriptionBase>; _ArgTypes = {rclcpp::node_interfaces::NodeBaseInterface*, const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, const rclcpp::QoS&}]\x1b[m\x1b[K\xe2\x80\x99, declared using local type \xe2\x80\x98\x1b[01m\x1b[Krclcpp::create_subscription_factory(CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr, std::shared_ptr<rclcpp::topic_statistics::SubscriptionTopicStatistics<CallbackMessageT> >) [with MessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; CallbackT = std::_Bind<void (NavigationToPose::*(NavigationToPose*, std::_Placeholder<1>))(geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >)>; AllocatorT = std::allocator<void>; CallbackMessageT = geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >; SubscriptionT = rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> > >; MessageMemoryStrategyT = rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> >; typename MessageMemoryStrategyT::SharedPtr = std::shared_ptr<rclcpp::message_memory_strategy::MessageMemoryStrategy<geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >, std::allocator<void> > >]::<lambda(rclcpp::node_interfaces::NodeBaseInterface*, const string&, const rclcpp::QoS&)>\x1b[m\x1b[K\xe2\x80\x99, is used but never defined [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[7.932326] (mynav) StderrLine: {'line': b'  667 |       \x1b[01;31m\x1b[Kfunction<_Res(_ArgTypes...)>\x1b[m\x1b[K::\n'}
+[7.932507] (mynav) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.934389] (-) TimerEvent: {}
+[8.034726] (-) TimerEvent: {}
+[8.135153] (-) TimerEvent: {}
+[8.235497] (-) TimerEvent: {}
+[8.335967] (-) TimerEvent: {}
+[8.359730] (mynav) StderrLine: {'line': b'make[2]: *** [CMakeFiles/action_client.dir/build.make:63\xef\xbc\x9aCMakeFiles/action_client.dir/src/main.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[8.360097] (mynav) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78\xef\xbc\x9aCMakeFiles/action_client.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[8.360519] (mynav) StderrLine: {'line': b'make: *** [Makefile:141\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[8.363899] (mynav) CommandEnded: {'returncode': 2}
+[8.436116] (-) TimerEvent: {}
+[8.534816] (mynav) JobEnded: {'identifier': 'mynav', 'rc': 2}
+[8.536330] (-) TimerEvent: {}
+[8.545785] (-) EventReactorShutdown: {}

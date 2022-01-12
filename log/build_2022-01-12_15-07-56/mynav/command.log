@@ -1,0 +1,4 @@
+Invoking command in '/home/hh/ros_ws/src/mynav/build/mynav': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/hh/ros_ws/src/mynav -DCMAKE_INSTALL_PREFIX=/home/hh/ros_ws/src/mynav/install
+Invoked command in '/home/hh/ros_ws/src/mynav/build/mynav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/hh/ros_ws/src/mynav -DCMAKE_INSTALL_PREFIX=/home/hh/ros_ws/src/mynav/install
+Invoking command in '/home/hh/ros_ws/src/mynav/build/mynav': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/hh/ros_ws/src/mynav/build/mynav -- -j8 -l8
+Invoked command in '/home/hh/ros_ws/src/mynav/build/mynav' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/hh/ros_ws/src/mynav/build/mynav -- -j8 -l8
