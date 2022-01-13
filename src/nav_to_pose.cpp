@@ -13,7 +13,7 @@
 class NavigationToPose : public rclcpp::Node
 {
 private:
-    rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr client_ptr_;
+    rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr goal_client_;
     rclcpp::TimerBase::SharedPtr timer_;
     using GoalHandleNav = rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>;
 
@@ -69,7 +69,7 @@ public:
     NavigationToPose(const rclcpp::NodeOptions & options = rclcpp::NodeOptions())
     : Node("NavgationToPose", options)
     {
-        this->client_ptr_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "navigate_to_pose");
+        this->goal_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "navigate_to_pose");
         this->timer_ = this->create_wall_timer(std::chrono::milliseconds(500), std::bind(&NavigationToPose::send_goal, this));
     }
 
@@ -78,7 +78,7 @@ public:
 
         this->timer_->cancel();
 
-        if (!this->client_ptr_->wait_for_action_server()) {
+        if (!this->goal_client_->wait_for_action_server()) {
         RCLCPP_ERROR(this->get_logger(), "Action server not available after waiting");
         rclcpp::shutdown();
         }
@@ -98,7 +98,7 @@ public:
         std::bind(&NavigationToPose::feedback_callback, this, _1, _2);
         send_goal_options.result_callback =
         std::bind(&NavigationToPose::result_callback, this, _1);
-        this->client_ptr_->async_send_goal(goal_msg, send_goal_options);
+        this->goal_client_->async_send_goal(goal_msg, send_goal_options);
     }
     ~NavigationToPose(){}
 };

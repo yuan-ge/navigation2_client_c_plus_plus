@@ -19,7 +19,7 @@
 class NavigationToPose : public rclcpp::Node
 {
 private:
-    rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr client_ptr_;
+    rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr goal_client_;
     rclcpp::Publisher<geometry_msgs::msg::PoseWithCovarianceStamped>::SharedPtr initial_pose_publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Client<nav2_msgs::srv::GetCostmap>::SharedPtr get_costmap_global;
@@ -86,7 +86,7 @@ public:
     : Node("NavgationToPose", options)
     {
         this->initial_pose_publisher_ = this->create_publisher<geometry_msgs::msg::PoseWithCovarianceStamped>("initialpose", 10);
-        this->client_ptr_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "navigate_to_pose");
+        this->goal_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "navigate_to_pose");
         this->timer_ = this->create_wall_timer(std::chrono::milliseconds(500), std::bind(&NavigationToPose::main_task, this));
         this->get_costmap_global = this->create_client<nav2_msgs::srv::GetCostmap>("/global_costmap/get_costmap");
         this->get_costmap_local = this->create_client<nav2_msgs::srv::GetCostmap>("/local_costmap/get_costmap");
@@ -102,7 +102,7 @@ public:
          */
         this->timer_->cancel(); //停止定时器，使得这个主任务只运行一次
         init_pose();
-        send_goal(4, 0, M_PI/2);
+        // send_goal(4, 0, M_PI/2);
         make_plan();
     }
 
@@ -116,7 +116,7 @@ public:
         }
         auto req = std::make_shared<nav2_msgs::srv::GetCostmap::Request>();
         auto future = this->get_costmap_global->async_send_request(req);
-        rclcpp::spin_until_future_complete(std::make_shared<NavigationToPose>(), future);
+        rclcpp::spin_until_future_complete(this, future);
         auto global_map = future.get()->map;
         RCLCPP_INFO(this->get_logger(), "获取了全局地图。");
     }
@@ -150,7 +150,7 @@ public:
 
         // this->timer_->cancel();
 
-        if (!this->client_ptr_->wait_for_action_server()) {
+        if (!this->goal_client_->wait_for_action_server()) {
         RCLCPP_ERROR(this->get_logger(), "Action server not available after waiting");
         rclcpp::shutdown();
         }
@@ -175,7 +175,7 @@ public:
         std::bind(&NavigationToPose::feedback_callback, this, _1, _2);
         send_goal_options.result_callback =
         std::bind(&NavigationToPose::result_callback, this, _1);
-        this->client_ptr_->async_send_goal(goal_msg, send_goal_options);
+        this->goal_client_->async_send_goal(goal_msg, send_goal_options);
     }
 
 
