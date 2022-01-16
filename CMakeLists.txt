@@ -23,29 +23,45 @@ find_package(rclcpp_action REQUIRED)
 find_package(rclcpp_components REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
-add_executable(action_client src/main.cpp)
-# add_library(action_client SHARED src/nav_to_pose.cpp)
-# target_include_directories(action_client PRIVATE
-#   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-#   $<INSTALL_INTERFACE:include>)
-# target_compile_definitions(action_client
-#   PRIVATE "MYNAV_BUILDING_DLL")
+add_library(test_client SHARED
+  src/nav_client.cpp)
+target_include_directories(test_client PRIVATE
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+target_compile_definitions(test_client
+  PRIVATE "MYNAV_BUILDING_DLL")
+ament_target_dependencies(test_client
+  "nav2_msgs"
+  "rclcpp"
+  "rclcpp_action"
+  "rclcpp_components"
+  "geometry_msgs")
+rclcpp_components_register_node(test_client PLUGIN "mynav::NavigationToPose" EXECUTABLE nav_client)
+install(TARGETS
+  test_client
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin)
+
+add_library(action_client SHARED
+  src/main.cpp)
+target_include_directories(action_client PRIVATE
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+target_compile_definitions(action_client
+  PRIVATE "MYNAV_BUILDING_DLL")
 ament_target_dependencies(action_client
   "nav2_msgs"
   "rclcpp"
   "rclcpp_action"
   "rclcpp_components"
   "geometry_msgs")
-# rclcpp_components_register_node(action_client PLUGIN "mynav::NavigationToPose" EXECUTABLE NavigationToPose)
-# install(TARGETS
-#   action_client
-#   ARCHIVE DESTINATION lib
-#   LIBRARY DESTINATION lib
-#   RUNTIME DESTINATION bin)
-
+rclcpp_components_register_node(action_client PLUGIN "mynav::CleanNode" EXECUTABLE clean_node)
 install(TARGETS
   action_client
-  DESTINATION lib/${PROJECT_NAME})
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

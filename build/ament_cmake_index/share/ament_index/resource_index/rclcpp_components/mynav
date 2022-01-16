@@ -1,0 +1,2 @@
+mynav::NavigationToPose;lib/libtest_client.so
+mynav::CleanNode;lib/libaction_client.so

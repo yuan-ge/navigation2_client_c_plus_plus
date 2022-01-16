@@ -44,7 +44,8 @@
       "id": "program",
       "type": "promptString",
       "description": "Program name",
-      "default": "action_client"
+      // "default": "action_client"
+      "default": "patrol"
     }
   ]
 }
