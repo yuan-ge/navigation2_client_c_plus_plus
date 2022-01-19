@@ -53,10 +53,8 @@ CMAKE_BINARY_DIR = /home/hh/turtle_nav_ws/src/mynav/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/patrol.dir/all
 all: CMakeFiles/clean_node.dir/all
-all: CMakeFiles/action_client.dir/all
-all: CMakeFiles/nav_client.dir/all
-all: CMakeFiles/test_client.dir/all
 
 .PHONY : all
 
@@ -66,14 +64,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/patrol.dir/clean
 clean: CMakeFiles/clean_node.dir/clean
-clean: CMakeFiles/action_client.dir/clean
 clean: CMakeFiles/mynav_uninstall.dir/clean
-clean: CMakeFiles/nav_client.dir/clean
-clean: CMakeFiles/test_client.dir/clean
 clean: CMakeFiles/uninstall.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/patrol.dir
+
+# All Build rule for target.
+CMakeFiles/patrol.dir/all:
+	$(MAKE) -f CMakeFiles/patrol.dir/build.make CMakeFiles/patrol.dir/depend
+	$(MAKE) -f CMakeFiles/patrol.dir/build.make CMakeFiles/patrol.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles --progress-num=3,4 "Built target patrol"
+.PHONY : CMakeFiles/patrol.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/patrol.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/patrol.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles 0
+.PHONY : CMakeFiles/patrol.dir/rule
+
+# Convenience name for target.
+patrol: CMakeFiles/patrol.dir/rule
+
+.PHONY : patrol
+
+# clean rule for target.
+CMakeFiles/patrol.dir/clean:
+	$(MAKE) -f CMakeFiles/patrol.dir/build.make CMakeFiles/patrol.dir/clean
+.PHONY : CMakeFiles/patrol.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/clean_node.dir
@@ -82,7 +105,7 @@ clean: CMakeFiles/uninstall.dir/clean
 CMakeFiles/clean_node.dir/all:
 	$(MAKE) -f CMakeFiles/clean_node.dir/build.make CMakeFiles/clean_node.dir/depend
 	$(MAKE) -f CMakeFiles/clean_node.dir/build.make CMakeFiles/clean_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles --progress-num=3,4 "Built target clean_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles --progress-num=1,2 "Built target clean_node"
 .PHONY : CMakeFiles/clean_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -101,33 +124,6 @@ clean_node: CMakeFiles/clean_node.dir/rule
 CMakeFiles/clean_node.dir/clean:
 	$(MAKE) -f CMakeFiles/clean_node.dir/build.make CMakeFiles/clean_node.dir/clean
 .PHONY : CMakeFiles/clean_node.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/action_client.dir
-
-# All Build rule for target.
-CMakeFiles/action_client.dir/all:
-	$(MAKE) -f CMakeFiles/action_client.dir/build.make CMakeFiles/action_client.dir/depend
-	$(MAKE) -f CMakeFiles/action_client.dir/build.make CMakeFiles/action_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles --progress-num=1,2 "Built target action_client"
-.PHONY : CMakeFiles/action_client.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/action_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/action_client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles 0
-.PHONY : CMakeFiles/action_client.dir/rule
-
-# Convenience name for target.
-action_client: CMakeFiles/action_client.dir/rule
-
-.PHONY : action_client
-
-# clean rule for target.
-CMakeFiles/action_client.dir/clean:
-	$(MAKE) -f CMakeFiles/action_client.dir/build.make CMakeFiles/action_client.dir/clean
-.PHONY : CMakeFiles/action_client.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/mynav_uninstall.dir
@@ -155,60 +151,6 @@ mynav_uninstall: CMakeFiles/mynav_uninstall.dir/rule
 CMakeFiles/mynav_uninstall.dir/clean:
 	$(MAKE) -f CMakeFiles/mynav_uninstall.dir/build.make CMakeFiles/mynav_uninstall.dir/clean
 .PHONY : CMakeFiles/mynav_uninstall.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/nav_client.dir
-
-# All Build rule for target.
-CMakeFiles/nav_client.dir/all:
-	$(MAKE) -f CMakeFiles/nav_client.dir/build.make CMakeFiles/nav_client.dir/depend
-	$(MAKE) -f CMakeFiles/nav_client.dir/build.make CMakeFiles/nav_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles --progress-num=5,6 "Built target nav_client"
-.PHONY : CMakeFiles/nav_client.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/nav_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/nav_client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles 0
-.PHONY : CMakeFiles/nav_client.dir/rule
-
-# Convenience name for target.
-nav_client: CMakeFiles/nav_client.dir/rule
-
-.PHONY : nav_client
-
-# clean rule for target.
-CMakeFiles/nav_client.dir/clean:
-	$(MAKE) -f CMakeFiles/nav_client.dir/build.make CMakeFiles/nav_client.dir/clean
-.PHONY : CMakeFiles/nav_client.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/test_client.dir
-
-# All Build rule for target.
-CMakeFiles/test_client.dir/all:
-	$(MAKE) -f CMakeFiles/test_client.dir/build.make CMakeFiles/test_client.dir/depend
-	$(MAKE) -f CMakeFiles/test_client.dir/build.make CMakeFiles/test_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles --progress-num=7,8 "Built target test_client"
-.PHONY : CMakeFiles/test_client.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/test_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_client.dir/rule
-
-# Convenience name for target.
-test_client: CMakeFiles/test_client.dir/rule
-
-.PHONY : test_client
-
-# clean rule for target.
-CMakeFiles/test_client.dir/clean:
-	$(MAKE) -f CMakeFiles/test_client.dir/build.make CMakeFiles/test_client.dir/clean
-.PHONY : CMakeFiles/test_client.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/uninstall.dir

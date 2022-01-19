@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hh/turtle_nav_ws/src/mynav/build/rclcpp_components/node_main_clean_node.cpp" "/home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.o"
+  "/home/hh/turtle_nav_ws/src/mynav/src/main.cpp" "/home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles/clean_node.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

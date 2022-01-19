@@ -1,0 +1,65 @@
+[0.792s] Invoking command in '/home/hh/turtle_nav_ws/src/mynav/build/mynav': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/hh/turtle_nav_ws/src/mynav/build/mynav -- -j8 -l8
+[0.837s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.881s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.528s] -- Found nav2_msgs: 0.4.7 (/opt/ros/foxy/share/nav2_msgs/cmake)
+[1.573s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.580s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.783s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.525s] -- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[2.583s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[2.585s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.833s] -- Found rclcpp_action: 2.4.0 (/opt/ros/foxy/share/rclcpp_action/cmake)
+[2.892s] -- Found rclcpp_components: 2.4.0 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[2.993s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[3.511s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.609s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.609s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/hh/turtle_nav_ws/src/mynav/include>
+[3.609s] -- Configured cppcheck exclude dirs and/or files: 
+[3.675s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.675s] -- Configured cpplint exclude dirs and/or files: 
+[3.684s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.699s] -- Added test 'lint_cmake' to check CMake code style
+[3.708s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[3.778s] -- Added test 'uncrustify' to check C / C++ code style
+[3.778s] -- Configured uncrustify additional arguments: 
+[3.789s] -- Added test 'xmllint' to check XML markup files
+[3.794s] -- Configuring done
+[5.182s] -- Generating done
+[5.186s] -- Build files have been written to: /home/hh/turtle_nav_ws/src/mynav/build/mynav
+[5.239s] [35m[1mScanning dependencies of target clean_node[0m
+[5.250s] [35m[1mScanning dependencies of target test_client[0m
+[5.289s] [ 33%] Built target nav_client
+[5.307s] [ 50%] [32m[1mLinking CXX shared library libtest_client.so[0m
+[5.321s] [ 66%] [32mBuilding CXX object CMakeFiles/clean_node.dir/src/main.cpp.o[0m
+[5.847s] [ 83%] Built target test_client
+[9.072s] [01m[K/home/hh/turtle_nav_ws/src/mynav/src/main.cpp:[m[K In member function ‘[01m[Kvoid mynav::CleanNode::feedback_callback(rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr, std::shared_ptr<const nav2_msgs::action::NavigateToPose_Feedback_<std::allocator<void> > >)[m[K’:
+[9.072s] [01m[K/home/hh/turtle_nav_ws/src/mynav/src/main.cpp:121:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfeedback[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[9.072s]   121 |     [01;35m[Kconst std::shared_ptr<const Action_T::Feedback> feedback[m[K)
+[9.072s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[20.437s] [100%] [32m[1mLinking CXX executable clean_node[0m
+[20.810s] [100%] Built target clean_node
+[20.832s] Invoked command in '/home/hh/turtle_nav_ws/src/mynav/build/mynav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/hh/turtle_nav_ws/src/mynav/build/mynav -- -j8 -l8
+[20.898s] Invoking command in '/home/hh/turtle_nav_ws/src/mynav/build/mynav': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/hh/turtle_nav_ws/src/mynav/build/mynav
+[20.913s] -- Install configuration: "RelWithDebInfo"
+[20.914s] -- Installing: /home/hh/turtle_nav_ws/src/mynav/install/lib/mynav/clean_node
+[20.921s] -- Set runtime path of "/home/hh/turtle_nav_ws/src/mynav/install/lib/mynav/clean_node" to ""
+[20.922s] -- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/lib/mynav/nav_client
+[20.923s] -- Installing: /home/hh/turtle_nav_ws/src/mynav/install/lib/libtest_client.so
+[20.935s] -- Set runtime path of "/home/hh/turtle_nav_ws/src/mynav/install/lib/libtest_client.so" to ""
+[20.935s] -- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/ament_index/resource_index/package_run_dependencies/mynav
+[20.935s] -- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/ament_index/resource_index/parent_prefix_path/mynav
+[20.935s] -- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/ament_prefix_path.sh
+[20.936s] -- Installing: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/ament_prefix_path.dsv
+[20.936s] -- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/path.sh
+[20.936s] -- Installing: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/path.dsv
+[20.936s] -- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.bash
+[20.936s] -- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.sh
+[20.936s] -- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.zsh
+[20.937s] -- Installing: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.dsv
+[20.937s] -- Installing: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.dsv
+[20.937s] -- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/ament_index/resource_index/packages/mynav
+[20.937s] -- Installing: /home/hh/turtle_nav_ws/src/mynav/install/share/ament_index/resource_index/rclcpp_components/mynav
+[20.937s] -- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/cmake/mynavConfig.cmake
+[20.937s] -- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/cmake/mynavConfig-version.cmake
+[20.938s] -- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.xml
+[20.942s] Invoked command in '/home/hh/turtle_nav_ws/src/mynav/build/mynav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/hh/turtle_nav_ws/src/mynav/build/mynav

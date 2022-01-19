@@ -6,9 +6,7 @@
 ```bash
 colcon build
 . install/setup.bash
-ros2 run mynav nav_client
+ros2 run mynav clean_node
 ```
 
-main.cpp是不能接受到action server的消息的版本。对应的是clean_node
-nav_client.cpp是可以接受到消息的版本。对应的是nav_client
-但我仔细比对了，发现他俩好像真的没有什么本质上的区别。我找不到他俩表现出来不一样的原因
+里面除了clean_node还有一些别的用例，比如patrol，是沿着特定路径巡逻的一个小应用。

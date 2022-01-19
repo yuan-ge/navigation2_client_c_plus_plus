@@ -4,7 +4,7 @@
 # compile CXX with /bin/x86_64-linux-gnu-g++-9
 CXX_FLAGS = -g -fPIC   -Wall -Wextra -Wpedantic -std=gnu++14
 
-CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DMYNAV_BUILDING_DLL -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -Daction_client_EXPORTS
+CXX_DEFINES = -Daction_client_EXPORTS
 
-CXX_INCLUDES = -I/home/hh/turtle_nav_ws/src/mynav/include -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = 
 

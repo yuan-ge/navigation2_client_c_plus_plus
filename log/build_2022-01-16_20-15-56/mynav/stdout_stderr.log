@@ -1,0 +1,31 @@
+[35m[1mScanning dependencies of target clean_node[0m
+[ 33%] Built target nav_client
+[ 66%] Built target test_client
+[ 83%] [32mBuilding CXX object CMakeFiles/clean_node.dir/src/main.cpp.o[0m
+[01m[K/home/hh/turtle_nav_ws/src/mynav/src/main.cpp:[m[K In member function ‘[01m[Kvoid mynav::CleanNode::feedback_callback(rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr, std::shared_ptr<const nav2_msgs::action::NavigateToPose_Feedback_<std::allocator<void> > >)[m[K’:
+[01m[K/home/hh/turtle_nav_ws/src/mynav/src/main.cpp:121:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfeedback[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  121 |     [01;35m[Kconst std::shared_ptr<const Action_T::Feedback> feedback[m[K)
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable clean_node[0m
+[100%] Built target clean_node
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/hh/turtle_nav_ws/src/mynav/install/lib/mynav/clean_node
+-- Set runtime path of "/home/hh/turtle_nav_ws/src/mynav/install/lib/mynav/clean_node" to ""
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/lib/mynav/nav_client
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/lib/libtest_client.so
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/ament_index/resource_index/package_run_dependencies/mynav
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/ament_index/resource_index/parent_prefix_path/mynav
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/ament_prefix_path.sh
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/path.sh
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/path.dsv
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.bash
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.sh
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.zsh
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.dsv
+-- Installing: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.dsv
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/ament_index/resource_index/packages/mynav
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/ament_index/resource_index/rclcpp_components/mynav
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/cmake/mynavConfig.cmake
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/cmake/mynavConfig-version.cmake
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.xml

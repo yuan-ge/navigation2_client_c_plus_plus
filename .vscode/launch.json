@@ -45,7 +45,7 @@
       "type": "promptString",
       "description": "Program name",
       // "default": "action_client"
-      "default": "patrol"
+      "default": "clean_node"
     }
   ]
 }

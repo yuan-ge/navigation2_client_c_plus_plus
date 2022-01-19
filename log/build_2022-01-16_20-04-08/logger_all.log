@@ -1,0 +1,105 @@
+[0.313s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--merge-install', '--cmake-args', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-Wall', '-Wextra', '-Wpedantic']
+[0.313s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-Wall', '-Wextra', '-Wpedantic'], cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fc83cda9fd0>>, merge_install=True, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fc83cda9fd0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fc83cdb4520>)
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.324s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.324s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hh/turtle_nav_ws/src/mynav'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.353s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'mynav'
+[0.353s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.354s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.354s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.354s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.354s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'mynav' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-Wall', '-Wextra', '-Wpedantic']'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'mynav' build argument 'cmake_target' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'mynav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'mynav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'mynav' build argument 'cmake_clean_first' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'mynav' build argument 'cmake_force_configure' from command line to 'False'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'mynav' build argument 'ament_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'mynav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.390s] Level 5:colcon.colcon_core.verb:set package 'mynav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.391s] DEBUG:colcon.colcon_core.verb:Building package 'mynav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hh/turtle_nav_ws/src/mynav/build/mynav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-Wall', '-Wextra', '-Wpedantic'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hh/turtle_nav_ws/src/mynav/install', 'merge_install': True, 'path': '/home/hh/turtle_nav_ws/src/mynav', 'symlink_install': False, 'test_result_base': None}
+[0.396s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.400s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.401s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hh/turtle_nav_ws/src/mynav' with build type 'ament_cmake'
+[0.402s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hh/turtle_nav_ws/src/mynav'
+[0.410s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.557s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.557s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hh/turtle_nav_ws/src/mynav/build/mynav': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/hh/turtle_nav_ws/src/mynav/build/mynav -- -j8 -l8
+[21.236s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hh/turtle_nav_ws/src/mynav/build/mynav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/hh/turtle_nav_ws/src/mynav/build/mynav -- -j8 -l8
+[21.302s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hh/turtle_nav_ws/src/mynav/build/mynav': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/hh/turtle_nav_ws/src/mynav/build/mynav
+[21.344s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mynav)
+[21.345s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hh/turtle_nav_ws/src/mynav/build/mynav' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/hh/turtle_nav_ws/src/mynav/build/mynav
+[21.353s] Level 1:colcon.colcon_core.environment:checking '/home/hh/turtle_nav_ws/src/mynav/install' for CMake module files
+[21.354s] Level 1:colcon.colcon_core.environment:checking '/home/hh/turtle_nav_ws/src/mynav/install' for CMake config files
+[21.355s] Level 1:colcon.colcon_core.shell:create_environment_hook('mynav', 'cmake_prefix_path')
+[21.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/hook/cmake_prefix_path.ps1'
+[21.357s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/hook/cmake_prefix_path.dsv'
+[21.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/hook/cmake_prefix_path.sh'
+[21.362s] Level 1:colcon.colcon_core.environment:checking '/home/hh/turtle_nav_ws/src/mynav/install/lib'
+[21.363s] Level 1:colcon.colcon_core.shell:create_environment_hook('mynav', 'ld_library_path_lib')
+[21.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/hook/ld_library_path_lib.ps1'
+[21.366s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/hook/ld_library_path_lib.dsv'
+[21.367s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/hook/ld_library_path_lib.sh'
+[21.368s] Level 1:colcon.colcon_core.environment:checking '/home/hh/turtle_nav_ws/src/mynav/install/bin'
+[21.368s] Level 1:colcon.colcon_core.environment:checking '/home/hh/turtle_nav_ws/src/mynav/install/lib/pkgconfig/mynav.pc'
+[21.368s] Level 1:colcon.colcon_core.environment:checking '/home/hh/turtle_nav_ws/src/mynav/install/lib/python3.8/site-packages'
+[21.369s] INFO:colcon.colcon_core.shell:Creating package script '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.ps1'
+[21.371s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.dsv'
+[21.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.sh'
+[21.373s] INFO:colcon.colcon_core.shell:Creating package script '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.bash'
+[21.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.zsh'
+[21.377s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hh/turtle_nav_ws/src/mynav/install/share/colcon-core/packages/mynav)
+[21.432s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mynav)
+[21.434s] Level 1:colcon.colcon_core.environment:checking '/home/hh/turtle_nav_ws/src/mynav/install' for CMake module files
+[21.435s] Level 1:colcon.colcon_core.environment:checking '/home/hh/turtle_nav_ws/src/mynav/install' for CMake config files
+[21.436s] Level 1:colcon.colcon_core.shell:create_environment_hook('mynav', 'cmake_prefix_path')
+[21.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/hook/cmake_prefix_path.ps1'
+[21.440s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/hook/cmake_prefix_path.dsv'
+[21.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/hook/cmake_prefix_path.sh'
+[21.443s] Level 1:colcon.colcon_core.environment:checking '/home/hh/turtle_nav_ws/src/mynav/install/lib'
+[21.443s] Level 1:colcon.colcon_core.shell:create_environment_hook('mynav', 'ld_library_path_lib')
+[21.444s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/hook/ld_library_path_lib.ps1'
+[21.445s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/hook/ld_library_path_lib.dsv'
+[21.446s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/hook/ld_library_path_lib.sh'
+[21.447s] Level 1:colcon.colcon_core.environment:checking '/home/hh/turtle_nav_ws/src/mynav/install/bin'
+[21.447s] Level 1:colcon.colcon_core.environment:checking '/home/hh/turtle_nav_ws/src/mynav/install/lib/pkgconfig/mynav.pc'
+[21.447s] Level 1:colcon.colcon_core.environment:checking '/home/hh/turtle_nav_ws/src/mynav/install/lib/python3.8/site-packages'
+[21.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.ps1'
+[21.450s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.dsv'
+[21.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.sh'
+[21.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.bash'
+[21.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.zsh'
+[21.456s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hh/turtle_nav_ws/src/mynav/install/share/colcon-core/packages/mynav)
+[21.456s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[21.457s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[21.457s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[21.457s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[21.475s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[21.476s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[21.476s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[21.542s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[21.543s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hh/turtle_nav_ws/src/mynav/install/local_setup.ps1'
+[21.546s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hh/turtle_nav_ws/src/mynav/install/_local_setup_util_ps1.py'
+[21.549s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hh/turtle_nav_ws/src/mynav/install/setup.ps1'
+[21.551s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hh/turtle_nav_ws/src/mynav/install/local_setup.sh'
+[21.553s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hh/turtle_nav_ws/src/mynav/install/_local_setup_util_sh.py'
+[21.554s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hh/turtle_nav_ws/src/mynav/install/setup.sh'
+[21.556s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hh/turtle_nav_ws/src/mynav/install/local_setup.bash'
+[21.558s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hh/turtle_nav_ws/src/mynav/install/setup.bash'
+[21.562s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hh/turtle_nav_ws/src/mynav/install/local_setup.zsh'
+[21.564s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hh/turtle_nav_ws/src/mynav/install/setup.zsh'

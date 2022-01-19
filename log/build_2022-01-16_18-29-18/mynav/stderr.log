@@ -1,0 +1,8 @@
+[01m[K/home/hh/turtle_nav_ws/src/mynav/src/nav_client.cpp:[m[K In member function ‘[01m[Kvoid mynav::NavigationToPose::feedback_callback(rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr, std::shared_ptr<const nav2_msgs::action::NavigateToPose_Feedback_<std::allocator<void> > >)[m[K’:
+[01m[K/home/hh/turtle_nav_ws/src/mynav/src/nav_client.cpp:111:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfeedback[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  111 |     [01;35m[Kconst std::shared_ptr<const Action_T::Feedback> feedback[m[K)
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/hh/turtle_nav_ws/src/mynav/src/main.cpp:[m[K In member function ‘[01m[Kvoid mynav::CleanNode::feedback_callback(rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr, std::shared_ptr<const nav2_msgs::action::NavigateToPose_Feedback_<std::allocator<void> > >)[m[K’:
+[01m[K/home/hh/turtle_nav_ws/src/mynav/src/main.cpp:122:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfeedback[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  122 |     [01;35m[Kconst std::shared_ptr<const Action_T::Feedback> feedback[m[K)
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K

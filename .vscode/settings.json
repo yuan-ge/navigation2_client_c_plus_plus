@@ -1,6 +1,5 @@
 {
-    "editor.tabSize": 8,
-    "editor.rulers": [
+	"editor.rulers": [
         100
     ],
     "files.associations": {

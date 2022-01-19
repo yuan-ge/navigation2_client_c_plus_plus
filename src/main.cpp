@@ -24,44 +24,27 @@ public:
     CleanNode(const rclcpp::NodeOptions & options = rclcpp::NodeOptions())
     : Node("my_navigator", options)
     {
+        this->cg1 = this->create_callback_group(rclcpp::callback_group::CallbackGroupType::MutuallyExclusive);
+        this->cg2 = this->create_callback_group(rclcpp::callback_group::CallbackGroupType::MutuallyExclusive);
         this->initial_pose_publisher_ = this->create_publisher<geometry_msgs::msg::PoseWithCovarianceStamped>("initialpose", 10);
-        this->goal_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "navigate_to_pose");
-        this->timer_ = this->create_wall_timer(std::chrono::milliseconds(500), std::bind(&CleanNode::main_task, this));
-        this->get_costmap_global = this->create_client<nav2_msgs::srv::GetCostmap>("/global_costmap/get_costmap");
-        this->get_costmap_local = this->create_client<nav2_msgs::srv::GetCostmap>("/local_costmap/get_costmap");
+        this->goal_client_ = rclcpp_action::create_client<nav2_msgs::action::NavigateToPose>(this, "navigate_to_pose", this->cg2);
+        this->timer_ = this->create_wall_timer(std::chrono::milliseconds(500), std::bind(&CleanNode::main_task, this), this->cg1);
+        /* main_task是一个定时器回调，action_callback也是一个回调，默认处理是一个节点的所有回调是在一个互斥组中。
+        这里，将定时器回调与动作回调放在不同的互斥组中，在定时器回调执行的同时，动作回调也可以在另一个线程中执行。 */
 
-        in_nav = false; 
+        this->in_nav = false;
     }
-   
+
     void main_task(){
         /**
          * @brief 运行的主要任务
          * 
          */
         this->timer_->cancel(); //停止定时器，使得这个主任务只运行一次
-        // init_pose();
+        init_pose();
         send_goal(0.5, -1, 0);
         send_goal(4, 0, M_PI/2);
-        // make_plan();
-    }
-
-    void make_plan(){
-        /**
-         * @brief 依据地图进行清扫任务的规划
-         * 
-         */
-        while(!this->get_costmap_global->wait_for_service(std::chrono::seconds(1))){
-            RCLCPP_INFO(this->get_logger(), "service not available, waiting again...");
-        }
-        auto req = std::make_shared<nav2_msgs::srv::GetCostmap::Request>();
-        auto global_response_callback = [this](rclcpp::Client<nav2_msgs::srv::GetCostmap>::SharedFuture future){
-            auto map = future.get()->map;
-            auto data = map.data;
-            auto metadata = map.metadata;
-            RCLCPP_INFO(this->get_logger(), "获取了全局地图。");
-        };
-        auto future = this->get_costmap_global->async_send_request(req, global_response_callback);
-        // rclcpp::spin_until_future_complete(this, future);
+        rclcpp::shutdown();
     }
 
     void init_pose(){
@@ -89,13 +72,12 @@ public:
 
         // this->timer_->cancel();
 
+        while(this->in_nav){
+        }
+        
         if (!this->goal_client_->wait_for_action_server()) {
         RCLCPP_ERROR(this->get_logger(), "Action server not available after waiting");
         rclcpp::shutdown();
-        }
-
-        while(in_nav){
-            std::this_thread::sleep_for(std::chrono::seconds(2));
         }
 
         tf2::Quaternion orientation;
@@ -121,21 +103,21 @@ public:
         this->goal_client_->async_send_goal(goal_msg, send_goal_options);
         this->in_nav = true;
     }
-
 private:
     rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SharedPtr goal_client_;
     rclcpp::Publisher<geometry_msgs::msg::PoseWithCovarianceStamped>::SharedPtr initial_pose_publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
-    rclcpp::Client<nav2_msgs::srv::GetCostmap>::SharedPtr get_costmap_global;
-    rclcpp::Client<nav2_msgs::srv::GetCostmap>::SharedPtr get_costmap_local;
+    rclcpp::callback_group::CallbackGroup::SharedPtr cg1;
+    rclcpp::callback_group::CallbackGroup::SharedPtr cg2;
 
-    bool in_nav; //表示是否正在导航过程中。
+    bool in_nav;
 
     void goal_response_callback(std::shared_future<GoalHandleNav::SharedPtr> future)
     {
         auto goal_handle = future.get();
         if (!goal_handle) {
         RCLCPP_ERROR(this->get_logger(), "Navigation is rejected!");
+        rclcpp::shutdown();
         } else {
         RCLCPP_INFO(this->get_logger(), "Navgation start!");
         }
@@ -145,10 +127,10 @@ private:
     GoalHandleNav::SharedPtr,
     const std::shared_ptr<const Action_T::Feedback> feedback)
     {
-        std::stringstream ss;
-        ss << "The current pose is: (" << feedback->current_pose.pose.position.x <<
-        ", " << feedback->current_pose.pose.position.y << ", " << feedback->current_pose.pose.position.z << ")";
-        RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+        // std::stringstream ss;
+        // ss << "The current pose is: (" << feedback->current_pose.pose.position.x <<
+        // ", " << feedback->current_pose.pose.position.y << ", " << feedback->current_pose.pose.position.z << ")";
+        // RCLCPP_INFO(this->get_logger(), ss.str().c_str());
     }
     
     void result_callback(const GoalHandleNav::WrappedResult & result)
@@ -174,10 +156,22 @@ private:
         RCLCPP_INFO(this->get_logger(), ss.str().c_str());
         // rclcpp::shutdown();
         this->in_nav = false;
-    }
+    }    
 };
 
 } //end of namespace mynav
-RCLCPP_COMPONENTS_REGISTER_NODE(mynav::CleanNode)
+
+int main(int argc, char * argv[])
+{
+    rclcpp::init(argc, argv);
+    rclcpp::executors::MultiThreadedExecutor executor;
+    auto node = std::make_shared<mynav::CleanNode>();
+    executor.add_node(node);
+    executor.spin();
+    rclcpp::shutdown();
+    return 0;
+}
+
+// RCLCPP_COMPONENTS_REGISTER_NODE(mynav::CleanNode)
 
 

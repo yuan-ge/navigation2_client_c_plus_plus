@@ -1,0 +1,67 @@
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found nav2_msgs: 0.4.7 (/opt/ros/foxy/share/nav2_msgs/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 2.4.0 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_action: 2.4.0 (/opt/ros/foxy/share/rclcpp_action/cmake)
+-- Found rclcpp_components: 2.4.0 (/opt/ros/foxy/share/rclcpp_components/cmake)
+-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hh/turtle_nav_ws/src/mynav/build/mynav
+[35m[1mScanning dependencies of target patrol[0m
+[35m[1mScanning dependencies of target clean_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/patrol.dir/src/patrol.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/clean_node.dir/src/main.cpp.o[0m
+[01m[K/home/hh/turtle_nav_ws/src/mynav/src/patrol.cpp:[m[K In member function ‘[01m[Kvoid mynav::CleanNode::feedback_callback(rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr, std::shared_ptr<const nav2_msgs::action::NavigateToPose_Feedback_<std::allocator<void> > >)[m[K’:
+[01m[K/home/hh/turtle_nav_ws/src/mynav/src/patrol.cpp:144:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfeedback[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  144 |     [01;35m[Kconst std::shared_ptr<const Action_T::Feedback> feedback[m[K)
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/hh/turtle_nav_ws/src/mynav/src/patrol.cpp:[m[K In member function ‘[01m[Kvoid mynav::CleanNode::pose_complete_callback(geometry_msgs::msg::PoseWithCovarianceStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/hh/turtle_nav_ws/src/mynav/src/patrol.cpp:177:96:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  177 |     void pose_complete_callback([01;35m[Kconst geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr msg[m[K){
+      |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/hh/turtle_nav_ws/src/mynav/src/main.cpp:[m[K In member function ‘[01m[Kvoid mynav::CleanNode::feedback_callback(rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr, std::shared_ptr<const nav2_msgs::action::NavigateToPose_Feedback_<std::allocator<void> > >)[m[K’:
+[01m[K/home/hh/turtle_nav_ws/src/mynav/src/main.cpp:128:53:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfeedback[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  128 |     [01;35m[Kconst std::shared_ptr<const Action_T::Feedback> feedback[m[K)
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[ 75%] [32m[1mLinking CXX executable clean_node[0m
+[ 75%] Built target clean_node
+[100%] [32m[1mLinking CXX executable patrol[0m
+[100%] Built target patrol
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/hh/turtle_nav_ws/src/mynav/install/lib/mynav/clean_node
+-- Set runtime path of "/home/hh/turtle_nav_ws/src/mynav/install/lib/mynav/clean_node" to ""
+-- Installing: /home/hh/turtle_nav_ws/src/mynav/install/lib/mynav/patrol
+-- Set runtime path of "/home/hh/turtle_nav_ws/src/mynav/install/lib/mynav/patrol" to ""
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/ament_index/resource_index/package_run_dependencies/mynav
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/ament_index/resource_index/parent_prefix_path/mynav
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/ament_prefix_path.sh
+-- Installing: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/path.sh
+-- Installing: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/path.dsv
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.bash
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.sh
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.zsh
+-- Installing: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.dsv
+-- Installing: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.dsv
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/ament_index/resource_index/packages/mynav
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/cmake/mynavConfig.cmake
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/cmake/mynavConfig-version.cmake
+-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.xml

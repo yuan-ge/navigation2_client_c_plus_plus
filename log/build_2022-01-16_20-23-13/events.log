@@ -1,0 +1,199 @@
+[0.000000] (-) TimerEvent: {}
+[0.000945] (mynav) JobQueued: {'identifier': 'mynav', 'dependencies': OrderedDict()}
+[0.001580] (mynav) JobStarted: {'identifier': 'mynav'}
+[0.021833] (mynav) JobProgress: {'identifier': 'mynav', 'progress': 'cmake'}
+[0.022856] (mynav) JobProgress: {'identifier': 'mynav', 'progress': 'build'}
+[0.024102] (mynav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hh/turtle_nav_ws/src/mynav/build/mynav', '--', '-j8', '-l8'], 'cwd': '/home/hh/turtle_nav_ws/src/mynav/build/mynav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'hh'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '2648'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/hh'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.63.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2450'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '83090'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hh'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:47689'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/zw:@/tmp/.ICE-unix/2697,unix/zw:/tmp/.ICE-unix/2697'), ('INVOCATION_ID', 'c3836626cf7c4f49a7eaba5550b443c0'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-01bec29237.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hh/turtle_nav_ws/src/mynav/build/mynav'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('BREAKPAD_DUMP_LOCATION', '/home/hh/.config/Code/exthost Crash Reports'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099595] (-) TimerEvent: {}
+[0.109819] (mynav) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target clean_node\x1b[0m\n'}
+[0.151092] (mynav) StdoutLine: {'line': b'[ 66%] Built target test_client\n'}
+[0.151394] (mynav) StdoutLine: {'line': b'[ 66%] Built target nav_client\n'}
+[0.199751] (-) TimerEvent: {}
+[0.279661] (mynav) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/clean_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.299845] (-) TimerEvent: {}
+[0.400233] (-) TimerEvent: {}
+[0.500782] (-) TimerEvent: {}
+[0.601338] (-) TimerEvent: {}
+[0.701714] (-) TimerEvent: {}
+[0.802150] (-) TimerEvent: {}
+[0.902661] (-) TimerEvent: {}
+[1.003131] (-) TimerEvent: {}
+[1.103547] (-) TimerEvent: {}
+[1.203929] (-) TimerEvent: {}
+[1.304317] (-) TimerEvent: {}
+[1.404652] (-) TimerEvent: {}
+[1.505051] (-) TimerEvent: {}
+[1.605704] (-) TimerEvent: {}
+[1.706110] (-) TimerEvent: {}
+[1.806510] (-) TimerEvent: {}
+[1.906920] (-) TimerEvent: {}
+[2.007414] (-) TimerEvent: {}
+[2.107828] (-) TimerEvent: {}
+[2.208211] (-) TimerEvent: {}
+[2.308638] (-) TimerEvent: {}
+[2.409241] (-) TimerEvent: {}
+[2.509643] (-) TimerEvent: {}
+[2.610104] (-) TimerEvent: {}
+[2.710550] (-) TimerEvent: {}
+[2.810908] (-) TimerEvent: {}
+[2.911235] (-) TimerEvent: {}
+[3.011661] (-) TimerEvent: {}
+[3.112302] (-) TimerEvent: {}
+[3.212644] (-) TimerEvent: {}
+[3.312989] (-) TimerEvent: {}
+[3.413370] (-) TimerEvent: {}
+[3.513739] (-) TimerEvent: {}
+[3.614120] (-) TimerEvent: {}
+[3.714471] (-) TimerEvent: {}
+[3.755893] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hh/turtle_nav_ws/src/mynav/src/main.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid mynav::CleanNode::feedback_callback(rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr, std::shared_ptr<const nav2_msgs::action::NavigateToPose_Feedback_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.756292] (mynav) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hh/turtle_nav_ws/src/mynav/src/main.cpp:121:53:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kfeedback\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[3.756502] (mynav) StderrLine: {'line': b'  121 |     \x1b[01;35m\x1b[Kconst std::shared_ptr<const Action_T::Feedback> feedback\x1b[m\x1b[K)\n'}
+[3.756669] (mynav) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[3.814599] (-) TimerEvent: {}
+[3.914992] (-) TimerEvent: {}
+[4.015459] (-) TimerEvent: {}
+[4.115888] (-) TimerEvent: {}
+[4.216403] (-) TimerEvent: {}
+[4.316868] (-) TimerEvent: {}
+[4.417331] (-) TimerEvent: {}
+[4.517847] (-) TimerEvent: {}
+[4.618406] (-) TimerEvent: {}
+[4.718802] (-) TimerEvent: {}
+[4.819232] (-) TimerEvent: {}
+[4.919770] (-) TimerEvent: {}
+[5.020343] (-) TimerEvent: {}
+[5.120901] (-) TimerEvent: {}
+[5.221351] (-) TimerEvent: {}
+[5.321841] (-) TimerEvent: {}
+[5.422306] (-) TimerEvent: {}
+[5.523070] (-) TimerEvent: {}
+[5.623458] (-) TimerEvent: {}
+[5.723892] (-) TimerEvent: {}
+[5.824315] (-) TimerEvent: {}
+[5.925011] (-) TimerEvent: {}
+[6.025480] (-) TimerEvent: {}
+[6.125859] (-) TimerEvent: {}
+[6.226359] (-) TimerEvent: {}
+[6.327019] (-) TimerEvent: {}
+[6.427630] (-) TimerEvent: {}
+[6.528047] (-) TimerEvent: {}
+[6.628536] (-) TimerEvent: {}
+[6.728978] (-) TimerEvent: {}
+[6.829315] (-) TimerEvent: {}
+[6.929626] (-) TimerEvent: {}
+[7.029979] (-) TimerEvent: {}
+[7.130336] (-) TimerEvent: {}
+[7.230646] (-) TimerEvent: {}
+[7.331020] (-) TimerEvent: {}
+[7.431496] (-) TimerEvent: {}
+[7.531876] (-) TimerEvent: {}
+[7.632294] (-) TimerEvent: {}
+[7.732853] (-) TimerEvent: {}
+[7.833238] (-) TimerEvent: {}
+[7.933587] (-) TimerEvent: {}
+[8.033988] (-) TimerEvent: {}
+[8.134376] (-) TimerEvent: {}
+[8.234846] (-) TimerEvent: {}
+[8.335189] (-) TimerEvent: {}
+[8.435595] (-) TimerEvent: {}
+[8.535975] (-) TimerEvent: {}
+[8.636315] (-) TimerEvent: {}
+[8.736710] (-) TimerEvent: {}
+[8.837128] (-) TimerEvent: {}
+[8.937547] (-) TimerEvent: {}
+[9.037909] (-) TimerEvent: {}
+[9.138260] (-) TimerEvent: {}
+[9.238644] (-) TimerEvent: {}
+[9.339039] (-) TimerEvent: {}
+[9.439391] (-) TimerEvent: {}
+[9.539813] (-) TimerEvent: {}
+[9.640338] (-) TimerEvent: {}
+[9.740746] (-) TimerEvent: {}
+[9.841115] (-) TimerEvent: {}
+[9.941571] (-) TimerEvent: {}
+[10.041925] (-) TimerEvent: {}
+[10.142223] (-) TimerEvent: {}
+[10.242525] (-) TimerEvent: {}
+[10.342917] (-) TimerEvent: {}
+[10.443259] (-) TimerEvent: {}
+[10.543605] (-) TimerEvent: {}
+[10.643988] (-) TimerEvent: {}
+[10.744347] (-) TimerEvent: {}
+[10.844649] (-) TimerEvent: {}
+[10.944981] (-) TimerEvent: {}
+[11.045414] (-) TimerEvent: {}
+[11.145876] (-) TimerEvent: {}
+[11.246238] (-) TimerEvent: {}
+[11.346574] (-) TimerEvent: {}
+[11.446959] (-) TimerEvent: {}
+[11.547300] (-) TimerEvent: {}
+[11.647631] (-) TimerEvent: {}
+[11.748116] (-) TimerEvent: {}
+[11.848572] (-) TimerEvent: {}
+[11.948884] (-) TimerEvent: {}
+[12.049286] (-) TimerEvent: {}
+[12.149846] (-) TimerEvent: {}
+[12.250203] (-) TimerEvent: {}
+[12.350544] (-) TimerEvent: {}
+[12.450891] (-) TimerEvent: {}
+[12.551346] (-) TimerEvent: {}
+[12.651811] (-) TimerEvent: {}
+[12.752388] (-) TimerEvent: {}
+[12.852957] (-) TimerEvent: {}
+[12.953346] (-) TimerEvent: {}
+[13.053732] (-) TimerEvent: {}
+[13.154059] (-) TimerEvent: {}
+[13.254412] (-) TimerEvent: {}
+[13.354769] (-) TimerEvent: {}
+[13.455112] (-) TimerEvent: {}
+[13.555538] (-) TimerEvent: {}
+[13.656023] (-) TimerEvent: {}
+[13.756331] (-) TimerEvent: {}
+[13.856681] (-) TimerEvent: {}
+[13.957115] (-) TimerEvent: {}
+[14.057570] (-) TimerEvent: {}
+[14.157922] (-) TimerEvent: {}
+[14.258296] (-) TimerEvent: {}
+[14.358999] (-) TimerEvent: {}
+[14.459461] (-) TimerEvent: {}
+[14.559802] (-) TimerEvent: {}
+[14.660390] (-) TimerEvent: {}
+[14.760821] (-) TimerEvent: {}
+[14.861236] (-) TimerEvent: {}
+[14.961729] (-) TimerEvent: {}
+[15.062335] (-) TimerEvent: {}
+[15.154944] (mynav) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable clean_node\x1b[0m\n'}
+[15.162486] (-) TimerEvent: {}
+[15.262822] (-) TimerEvent: {}
+[15.363276] (-) TimerEvent: {}
+[15.463824] (-) TimerEvent: {}
+[15.506103] (mynav) StdoutLine: {'line': b'[100%] Built target clean_node\n'}
+[15.523651] (mynav) CommandEnded: {'returncode': 0}
+[15.564000] (-) TimerEvent: {}
+[15.568419] (mynav) JobProgress: {'identifier': 'mynav', 'progress': 'install'}
+[15.588020] (mynav) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hh/turtle_nav_ws/src/mynav/build/mynav'], 'cwd': '/home/hh/turtle_nav_ws/src/mynav/build/mynav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'hh'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '2648'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/hh'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.63.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2450'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '83090'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hh'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:47689'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/zw:@/tmp/.ICE-unix/2697,unix/zw:/tmp/.ICE-unix/2697'), ('INVOCATION_ID', 'c3836626cf7c4f49a7eaba5550b443c0'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-01bec29237.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hh/turtle_nav_ws/src/mynav/build/mynav'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('BREAKPAD_DUMP_LOCATION', '/home/hh/.config/Code/exthost Crash Reports'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[15.608450] (mynav) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[15.609010] (mynav) StdoutLine: {'line': b'-- Installing: /home/hh/turtle_nav_ws/src/mynav/install/lib/mynav/clean_node\n'}
+[15.627829] (mynav) StdoutLine: {'line': b'-- Set runtime path of "/home/hh/turtle_nav_ws/src/mynav/install/lib/mynav/clean_node" to ""\n'}
+[15.628370] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/lib/mynav/nav_client\n'}
+[15.628685] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/lib/libtest_client.so\n'}
+[15.629007] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/ament_index/resource_index/package_run_dependencies/mynav\n'}
+[15.631008] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/ament_index/resource_index/parent_prefix_path/mynav\n'}
+[15.631302] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/ament_prefix_path.sh\n'}
+[15.631893] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/ament_prefix_path.dsv\n'}
+[15.632076] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/path.sh\n'}
+[15.632252] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/environment/path.dsv\n'}
+[15.632429] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.bash\n'}
+[15.632599] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.sh\n'}
+[15.633307] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.zsh\n'}
+[15.633598] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/local_setup.dsv\n'}
+[15.633902] (mynav) StdoutLine: {'line': b'-- Installing: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.dsv\n'}
+[15.634261] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/ament_index/resource_index/packages/mynav\n'}
+[15.634606] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/ament_index/resource_index/rclcpp_components/mynav\n'}
+[15.635631] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/cmake/mynavConfig.cmake\n'}
+[15.636144] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/cmake/mynavConfig-version.cmake\n'}
+[15.636419] (mynav) StdoutLine: {'line': b'-- Up-to-date: /home/hh/turtle_nav_ws/src/mynav/install/share/mynav/package.xml\n'}
+[15.639668] (mynav) CommandEnded: {'returncode': 0}
+[15.664661] (-) TimerEvent: {}
+[15.760111] (mynav) JobEnded: {'identifier': 'mynav', 'rc': 0}
+[15.762795] (-) EventReactorShutdown: {}

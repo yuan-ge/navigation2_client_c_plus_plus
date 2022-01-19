@@ -273,9 +273,6 @@ TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 //Path to a library.
 _lib:FILEPATH=/opt/ros/foxy/lib/libcomposition_interfaces__rosidl_typesupport_fastrtps_cpp.so
 
-//Dependencies for the target
-action_client_LIB_DEPENDS:STATIC=general;nav2_msgs::nav2_msgs__rosidl_generator_c;general;nav2_msgs::nav2_msgs__rosidl_typesupport_introspection_c;general;nav2_msgs::nav2_msgs__rosidl_typesupport_c;general;nav2_msgs::nav2_msgs__rosidl_typesupport_introspection_cpp;general;nav2_msgs::nav2_msgs__rosidl_typesupport_cpp;general;rclcpp::rclcpp;general;rclcpp_action::rclcpp_action;general;rclcpp_components::component_manager;general;geometry_msgs::geometry_msgs__rosidl_generator_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_cpp;
-
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/foxy/share/action_msgs/cmake
 

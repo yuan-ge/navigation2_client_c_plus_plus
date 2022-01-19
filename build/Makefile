@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named patrol
+
+# Build rule for target.
+patrol: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 patrol
+.PHONY : patrol
+
+# fast build rule for target.
+patrol/fast:
+	$(MAKE) -f CMakeFiles/patrol.dir/build.make CMakeFiles/patrol.dir/build
+.PHONY : patrol/fast
+
+#=============================================================================
 # Target rules for targets named clean_node
 
 # Build rule for target.
@@ -179,19 +192,6 @@ clean_node: cmake_check_build_system
 clean_node/fast:
 	$(MAKE) -f CMakeFiles/clean_node.dir/build.make CMakeFiles/clean_node.dir/build
 .PHONY : clean_node/fast
-
-#=============================================================================
-# Target rules for targets named action_client
-
-# Build rule for target.
-action_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 action_client
-.PHONY : action_client
-
-# fast build rule for target.
-action_client/fast:
-	$(MAKE) -f CMakeFiles/action_client.dir/build.make CMakeFiles/action_client.dir/build
-.PHONY : action_client/fast
 
 #=============================================================================
 # Target rules for targets named mynav_uninstall
@@ -207,32 +207,6 @@ mynav_uninstall/fast:
 .PHONY : mynav_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named nav_client
-
-# Build rule for target.
-nav_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nav_client
-.PHONY : nav_client
-
-# fast build rule for target.
-nav_client/fast:
-	$(MAKE) -f CMakeFiles/nav_client.dir/build.make CMakeFiles/nav_client.dir/build
-.PHONY : nav_client/fast
-
-#=============================================================================
-# Target rules for targets named test_client
-
-# Build rule for target.
-test_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_client
-.PHONY : test_client
-
-# fast build rule for target.
-test_client/fast:
-	$(MAKE) -f CMakeFiles/test_client.dir/build.make CMakeFiles/test_client.dir/build
-.PHONY : test_client/fast
-
-#=============================================================================
 # Target rules for targets named uninstall
 
 # Build rule for target.
@@ -245,67 +219,13 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
-rclcpp_components/node_main_clean_node.o: rclcpp_components/node_main_clean_node.cpp.o
-
-.PHONY : rclcpp_components/node_main_clean_node.o
-
-# target to build an object file
-rclcpp_components/node_main_clean_node.cpp.o:
-	$(MAKE) -f CMakeFiles/clean_node.dir/build.make CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.o
-.PHONY : rclcpp_components/node_main_clean_node.cpp.o
-
-rclcpp_components/node_main_clean_node.i: rclcpp_components/node_main_clean_node.cpp.i
-
-.PHONY : rclcpp_components/node_main_clean_node.i
-
-# target to preprocess a source file
-rclcpp_components/node_main_clean_node.cpp.i:
-	$(MAKE) -f CMakeFiles/clean_node.dir/build.make CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.i
-.PHONY : rclcpp_components/node_main_clean_node.cpp.i
-
-rclcpp_components/node_main_clean_node.s: rclcpp_components/node_main_clean_node.cpp.s
-
-.PHONY : rclcpp_components/node_main_clean_node.s
-
-# target to generate assembly for a file
-rclcpp_components/node_main_clean_node.cpp.s:
-	$(MAKE) -f CMakeFiles/clean_node.dir/build.make CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.s
-.PHONY : rclcpp_components/node_main_clean_node.cpp.s
-
-rclcpp_components/node_main_nav_client.o: rclcpp_components/node_main_nav_client.cpp.o
-
-.PHONY : rclcpp_components/node_main_nav_client.o
-
-# target to build an object file
-rclcpp_components/node_main_nav_client.cpp.o:
-	$(MAKE) -f CMakeFiles/nav_client.dir/build.make CMakeFiles/nav_client.dir/rclcpp_components/node_main_nav_client.cpp.o
-.PHONY : rclcpp_components/node_main_nav_client.cpp.o
-
-rclcpp_components/node_main_nav_client.i: rclcpp_components/node_main_nav_client.cpp.i
-
-.PHONY : rclcpp_components/node_main_nav_client.i
-
-# target to preprocess a source file
-rclcpp_components/node_main_nav_client.cpp.i:
-	$(MAKE) -f CMakeFiles/nav_client.dir/build.make CMakeFiles/nav_client.dir/rclcpp_components/node_main_nav_client.cpp.i
-.PHONY : rclcpp_components/node_main_nav_client.cpp.i
-
-rclcpp_components/node_main_nav_client.s: rclcpp_components/node_main_nav_client.cpp.s
-
-.PHONY : rclcpp_components/node_main_nav_client.s
-
-# target to generate assembly for a file
-rclcpp_components/node_main_nav_client.cpp.s:
-	$(MAKE) -f CMakeFiles/nav_client.dir/build.make CMakeFiles/nav_client.dir/rclcpp_components/node_main_nav_client.cpp.s
-.PHONY : rclcpp_components/node_main_nav_client.cpp.s
-
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/action_client.dir/build.make CMakeFiles/action_client.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/clean_node.dir/build.make CMakeFiles/clean_node.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -314,7 +234,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/action_client.dir/build.make CMakeFiles/action_client.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/clean_node.dir/build.make CMakeFiles/clean_node.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -323,35 +243,35 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/action_client.dir/build.make CMakeFiles/action_client.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/clean_node.dir/build.make CMakeFiles/clean_node.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/nav_client.o: src/nav_client.cpp.o
+src/patrol.o: src/patrol.cpp.o
 
-.PHONY : src/nav_client.o
+.PHONY : src/patrol.o
 
 # target to build an object file
-src/nav_client.cpp.o:
-	$(MAKE) -f CMakeFiles/test_client.dir/build.make CMakeFiles/test_client.dir/src/nav_client.cpp.o
-.PHONY : src/nav_client.cpp.o
+src/patrol.cpp.o:
+	$(MAKE) -f CMakeFiles/patrol.dir/build.make CMakeFiles/patrol.dir/src/patrol.cpp.o
+.PHONY : src/patrol.cpp.o
 
-src/nav_client.i: src/nav_client.cpp.i
+src/patrol.i: src/patrol.cpp.i
 
-.PHONY : src/nav_client.i
+.PHONY : src/patrol.i
 
 # target to preprocess a source file
-src/nav_client.cpp.i:
-	$(MAKE) -f CMakeFiles/test_client.dir/build.make CMakeFiles/test_client.dir/src/nav_client.cpp.i
-.PHONY : src/nav_client.cpp.i
+src/patrol.cpp.i:
+	$(MAKE) -f CMakeFiles/patrol.dir/build.make CMakeFiles/patrol.dir/src/patrol.cpp.i
+.PHONY : src/patrol.cpp.i
 
-src/nav_client.s: src/nav_client.cpp.s
+src/patrol.s: src/patrol.cpp.s
 
-.PHONY : src/nav_client.s
+.PHONY : src/patrol.s
 
 # target to generate assembly for a file
-src/nav_client.cpp.s:
-	$(MAKE) -f CMakeFiles/test_client.dir/build.make CMakeFiles/test_client.dir/src/nav_client.cpp.s
-.PHONY : src/nav_client.cpp.s
+src/patrol.cpp.s:
+	$(MAKE) -f CMakeFiles/patrol.dir/build.make CMakeFiles/patrol.dir/src/patrol.cpp.s
+.PHONY : src/patrol.cpp.s
 
 # Help Target
 help:
@@ -366,24 +286,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... patrol"
 	@echo "... clean_node"
-	@echo "... action_client"
 	@echo "... mynav_uninstall"
-	@echo "... nav_client"
-	@echo "... test_client"
 	@echo "... uninstall"
-	@echo "... rclcpp_components/node_main_clean_node.o"
-	@echo "... rclcpp_components/node_main_clean_node.i"
-	@echo "... rclcpp_components/node_main_clean_node.s"
-	@echo "... rclcpp_components/node_main_nav_client.o"
-	@echo "... rclcpp_components/node_main_nav_client.i"
-	@echo "... rclcpp_components/node_main_nav_client.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/nav_client.o"
-	@echo "... src/nav_client.i"
-	@echo "... src/nav_client.s"
+	@echo "... src/patrol.o"
+	@echo "... src/patrol.i"
+	@echo "... src/patrol.s"
 .PHONY : help
 
 

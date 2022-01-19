@@ -57,29 +57,56 @@ include CMakeFiles/clean_node.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/clean_node.dir/flags.make
 
-CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.o: CMakeFiles/clean_node.dir/flags.make
-CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.o: rclcpp_components/node_main_clean_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.o"
-	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.o -c /home/hh/turtle_nav_ws/src/mynav/build/rclcpp_components/node_main_clean_node.cpp
+CMakeFiles/clean_node.dir/src/main.cpp.o: CMakeFiles/clean_node.dir/flags.make
+CMakeFiles/clean_node.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/clean_node.dir/src/main.cpp.o"
+	/bin/x86_64-linux-gnu-g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/clean_node.dir/src/main.cpp.o -c /home/hh/turtle_nav_ws/src/mynav/src/main.cpp
 
-CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.i"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hh/turtle_nav_ws/src/mynav/build/rclcpp_components/node_main_clean_node.cpp > CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.i
+CMakeFiles/clean_node.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/clean_node.dir/src/main.cpp.i"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hh/turtle_nav_ws/src/mynav/src/main.cpp > CMakeFiles/clean_node.dir/src/main.cpp.i
 
-CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.s"
-	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hh/turtle_nav_ws/src/mynav/build/rclcpp_components/node_main_clean_node.cpp -o CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.s
+CMakeFiles/clean_node.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/clean_node.dir/src/main.cpp.s"
+	/bin/x86_64-linux-gnu-g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hh/turtle_nav_ws/src/mynav/src/main.cpp -o CMakeFiles/clean_node.dir/src/main.cpp.s
 
 # Object files for target clean_node
 clean_node_OBJECTS = \
-"CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.o"
+"CMakeFiles/clean_node.dir/src/main.cpp.o"
 
 # External object files for target clean_node
 clean_node_EXTERNAL_OBJECTS =
 
-clean_node: CMakeFiles/clean_node.dir/rclcpp_components/node_main_clean_node.cpp.o
+clean_node: CMakeFiles/clean_node.dir/src/main.cpp.o
 clean_node: CMakeFiles/clean_node.dir/build.make
+clean_node: /opt/ros/foxy/lib/libnav2_msgs__rosidl_typesupport_introspection_c.so
+clean_node: /opt/ros/foxy/lib/libnav2_msgs__rosidl_typesupport_c.so
+clean_node: /opt/ros/foxy/lib/libnav2_msgs__rosidl_typesupport_introspection_cpp.so
+clean_node: /opt/ros/foxy/lib/libnav2_msgs__rosidl_typesupport_cpp.so
+clean_node: /opt/ros/foxy/lib/librclcpp_action.so
 clean_node: /opt/ros/foxy/lib/libcomponent_manager.so
+clean_node: /opt/ros/foxy/lib/libnav2_msgs__rosidl_generator_c.so
+clean_node: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
+clean_node: /opt/ros/foxy/lib/libnav_msgs__rosidl_generator_c.so
+clean_node: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_c.so
+clean_node: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
+clean_node: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_cpp.so
+clean_node: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+clean_node: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_generator_c.so
+clean_node: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_c.so
+clean_node: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+clean_node: /opt/ros/foxy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+clean_node: /opt/ros/foxy/lib/librcl_action.so
+clean_node: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_introspection_c.so
+clean_node: /opt/ros/foxy/lib/libaction_msgs__rosidl_generator_c.so
+clean_node: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_c.so
+clean_node: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so
+clean_node: /opt/ros/foxy/lib/libaction_msgs__rosidl_typesupport_cpp.so
+clean_node: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so
+clean_node: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_generator_c.so
+clean_node: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
+clean_node: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so
+clean_node: /opt/ros/foxy/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so
 clean_node: /opt/ros/foxy/lib/librclcpp.so
 clean_node: /opt/ros/foxy/lib/liblibstatistics_collector.so
 clean_node: /opt/ros/foxy/lib/liblibstatistics_collector_test_msgs__rosidl_typesupport_introspection_c.so
@@ -110,9 +137,9 @@ clean_node: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_c.so
 clean_node: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so
 clean_node: /opt/ros/foxy/lib/libstatistics_msgs__rosidl_typesupport_cpp.so
 clean_node: /opt/ros/foxy/lib/libtracetools.so
+clean_node: /opt/ros/foxy/lib/libament_index_cpp.so
 clean_node: /opt/ros/foxy/lib/libclass_loader.so
 clean_node: /opt/ros/foxy/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
-clean_node: /opt/ros/foxy/lib/libament_index_cpp.so
 clean_node: /opt/ros/foxy/lib/libcomposition_interfaces__rosidl_typesupport_introspection_c.so
 clean_node: /opt/ros/foxy/lib/libcomposition_interfaces__rosidl_generator_c.so
 clean_node: /opt/ros/foxy/lib/libcomposition_interfaces__rosidl_typesupport_c.so
@@ -132,8 +159,8 @@ clean_node: /opt/ros/foxy/lib/librosidl_typesupport_introspection_c.so
 clean_node: /opt/ros/foxy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 clean_node: /opt/ros/foxy/lib/librosidl_typesupport_cpp.so
 clean_node: /opt/ros/foxy/lib/librosidl_typesupport_c.so
-clean_node: /opt/ros/foxy/lib/librcpputils.so
 clean_node: /opt/ros/foxy/lib/librosidl_runtime_c.so
+clean_node: /opt/ros/foxy/lib/librcpputils.so
 clean_node: /opt/ros/foxy/lib/librcutils.so
 clean_node: CMakeFiles/clean_node.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hh/turtle_nav_ws/src/mynav/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable clean_node"
